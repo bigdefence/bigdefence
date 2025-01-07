@@ -143,7 +143,7 @@ AI 기반 외모 점수 측정 서비스
 
 ## 🔗 Connect with Me
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bigdefence)
-[![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)](https://navyellipse684.notion.site/afcd3d1da3b743e4bef129aa7a5150ae)
+[![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)](https://navy-ellipse-684.notion.site/afcd3d1da3b743e4bef129aa7a5150ae?pvs=74)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-FF9D00?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/bigdefence)
 
 ## 📧 Contact
