@@ -25,18 +25,20 @@
 ### SearchCast (2024.10 - 2024.11)
 실시간 AI 기반 팟캐스트 생성 플랫폼
 - 실시간 AI 검색엔진 연계 및 데이터 수집
-- BM25와 FAISS 기반 검색 알고리즘 구현
+- RAG(BM25, FAISS 앙상블) 이용하여 사용자 쿼리와 관련된 콘텐츠의 검색 구현
 - ChatGPT 모델 활용 팟캐스트 대본 생성
-- OpenAI TTS API 활용 음성 합성
-- 배경음악 추가 및 음향 믹싱
+- OpenAI TTS API 활용 팟캐스트 생성
+- 배경음악 추가 및 팟캐스트 믹싱
+- Flask 기반 웹 인터페이스
 - [GitHub Repository](https://github.com/bigdefence/SearchCast)
 
 ### AISearchEngine (2024.08 - 2024.09)
 통합 검색엔진 시스템
 - Google, Naver, YouTube API 통합 검색
 - asyncio/aiohttp 활용 비동기 처리
-- BM25와 FAISS 기반 검색 알고리즘
-- OpenAI와 Gemini 모델 활용 응답 생성
+- RAG(BM25, FAISS 앙상블) 이용하여 사용자 쿼리와 관련된 콘텐츠의 검색 구현
+- ChatGPT와 Gemini 모델을 사용하여 검색 결과를 바탕으로 심층적인 질문 응답을 생성하고, 검색 결과를 분석하고 요약
+- Flask 기반 웹 인터페이스
 - GCP 기반 웹 애플리케이션 배포
 - [GitHub Repository](https://github.com/bigdefence/search)
 
@@ -47,7 +49,6 @@ AI 기반 얼굴 분석 서비스
 - 궁합 분석 기능 구현
 - Flask 기반 웹 인터페이스
 - GCP 활용 웹 애플리케이션 배포
-- [Web Service](https://facefy.store)
 - [GitHub Repository](https://github.com/bigdefence/facefy)
 
 ### OmniVerse (2024.07 - 2024.08)
@@ -64,7 +65,7 @@ AI 기반 얼굴 분석 서비스
 LLM 기반 음성 지원 챗봇
 - Whisper 모델 활용 음성 인식
 - LLaMA-3-Korean 모델 기반 대화 응답 생성
-- Bark Text-to-Speech 음성 출력
+- gTTS Text-to-Speech 음성 출력
 - FastAPI 기반 REST API 구현
 - [GitHub Repository](https://github.com/bigdefence/sttttschatbot)
 
@@ -72,6 +73,7 @@ LLM 기반 음성 지원 챗봇
 개인화된 LLM 개발 및 RAG 시스템
 - RAG 시스템 구현 (FAISS, SentenceTransformer)
 - QLoRA 기반 모델 Fine-tuning
+  - Unsloth를 이용하여 학습 시간 및 메모리 효율 향상(학습시간 약 2배 단축, 메모리 사용량 약 55% 절감) 
 - HuggingFace 모델 배포 (1200+ 누적 다운로드 달성)
 - [GitHub Repository](https://github.com/bigdefence/rag_chatbot)
 
@@ -87,7 +89,11 @@ LLM 기반 음성 지원 챗봇
 얼굴 분석을 통한 ‘나만의 음악’ 생성 인공지능 ‘Music Face’
 - MediaPipe 활용 얼굴 검출
 - Vision Transformer(BEiT-V2, Swin-V2)모델 구현
+- 얼굴 분석 내용 기반 LLaMA3를 활용하여 음악 장르 및 분위기 추천 시스템 구현
+- LLaMA3 프롬프트 엔지니어링 수행
 - LLaMA-3 활용 음악 장르 추천
+- 음악 생성 및 다운로드 시스템 구현
+- Gradio 웹 인터페이스 
 - [GitHub Repository](https://github.com/bigdefence/MusicFace)
 
 ### 나의 MBTI는? (2023.11 - 2023.12)
@@ -95,8 +101,8 @@ LLM 기반 음성 지원 챗봇
 - MBTI 데이터셋 크롤링
 - MediaPipe 활용 얼굴 검출
 - EfficientNet 모델 구현
-- Streamlit 기반 웹 인터페이스
 - MBTI에 대한 성격, 연애 스타일, 직업, 유명인 소개 구현
+- Streamlit 기반 웹 인터페이스
 - [Live Demo](https://facembti.streamlit.app)
 - [GitHub Repository](https://github.com/bigdefence/mbti)
 
