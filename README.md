@@ -76,7 +76,7 @@ LLM 기반 음성 지원 챗봇
 - [GitHub Repository](https://github.com/bigdefence/rag_chatbot)
 
 ### 기억나래 (2024.06)
-치매 환자를 위한 AI 대화 companion
+외로운 일상의 소중한 기억을 지켜주는 인공지능 ‘기억나래’
 - STT/TTS 기술 활용 자연스러운 음성 대화
 - ChatGPT API 활용 대화 및 일기 생성
 - DALL-E 3 모델 활용 그림일기 생성
@@ -84,7 +84,7 @@ LLM 기반 음성 지원 챗봇
 - [GitHub Repository](https://github.com/bigdefence/hackathon)
 
 ### MusicFace (2024.05 - 2024.06)
-얼굴 분석 기반 음악 생성 AI
+얼굴 분석을 통한 ‘나만의 음악’ 생성 인공지능 ‘Music Face’
 - MediaPipe 활용 얼굴 검출
 - Vision Transformer(BEiT-V2, Swin-V2)모델 구현
 - LLaMA-3 활용 음악 장르 추천
