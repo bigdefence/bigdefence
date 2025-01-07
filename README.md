@@ -90,7 +90,7 @@ LLM 기반 음성 지원 챗봇
 - MediaPipe 활용 얼굴 검출
 - Vision Transformer(BEiT-V2, Swin-V2)모델 구현
 - 얼굴 분석 내용 기반 LLaMA3를 활용하여 음악 장르 및 분위기 추천 시스템 구현
-- LLaMA3 프롬프트 엔지니어링 수행
+- LLaMA-3 프롬프트 엔지니어링 수행
 - LLaMA-3 활용 음악 장르 추천
 - 음악 생성 및 다운로드 시스템 구현
 - Gradio 웹 인터페이스 
