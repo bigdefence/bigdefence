@@ -94,7 +94,7 @@ LLM 기반 음성 지원 챗봇
 - LLaMA-3 활용 음악 장르 추천
 - 음악 생성 및 다운로드 시스템 구현
 - Gradio 웹 인터페이스 
-- [GitHub Repository](https://github.com/bigdefence/MusicFace)
+- [GitHub Repository](https://github.com/bigdefence/Music-Face)
 
 ### 나의 MBTI는? (2023.11 - 2023.12)
 외모 기반 MBTI 예측 서비스
