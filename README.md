@@ -54,9 +54,10 @@ AI 기반 얼굴 분석 서비스
 멀티모달 한국어 챗봇
 - Google Gemini 모델 기반 대화형 인터페이스
 - MediaPipe 활용 얼굴 감지 및 분석
-- 웹툰 스타일 이미지 변환
+- 나의 외모점수는?
+   외모점수 Vision Transformer 구현(Swin Transformer)
 - AI 패션 스타일리스트 기능
-- [Live Demo](https://omniverse.streamlit.app)
+   생성형 AI(FLUX, Stable Diffusion) 추천된 패션 스타일의 이미지 생성
 - [GitHub Repository](https://github.com/bigdefence/OmniVerse)
 
 ### 음성지원 챗봇 (2024.06 - 2024.07)
@@ -71,13 +72,13 @@ LLM 기반 음성 지원 챗봇
 개인화된 LLM 개발 및 RAG 시스템
 - RAG 시스템 구현 (FAISS, SentenceTransformer)
 - QLoRA 기반 모델 Fine-tuning
-- HuggingFace 모델 배포 (1000+ 다운로드)
+- HuggingFace 모델 배포 (1200+ 누적 다운로드 달성)
 - [GitHub Repository](https://github.com/bigdefence/rag_chatbot)
 
 ### 기억나래 (2024.06)
 치매 환자를 위한 AI 대화 companion
 - STT/TTS 기술 활용 자연스러운 음성 대화
-- ChatGPT-4.0 API 활용 대화 및 일기 생성
+- ChatGPT API 활용 대화 및 일기 생성
 - DALL-E 3 모델 활용 그림일기 생성
 - 보호자용 모니터링 대시보드 구현
 - [GitHub Repository](https://github.com/bigdefence/hackathon)
@@ -85,30 +86,25 @@ LLM 기반 음성 지원 챗봇
 ### MusicFace (2024.05 - 2024.06)
 얼굴 분석 기반 음악 생성 AI
 - MediaPipe 활용 얼굴 검출
-- BEiT-V2, Swin-V2 모델 활용 얼굴 특징 분석
+- Vision Transformer(BEiT-V2, Swin-V2)모델 구현
 - LLaMA-3 활용 음악 장르 추천
 - [GitHub Repository](https://github.com/bigdefence/MusicFace)
 
 ### 나의 MBTI는? (2023.11 - 2023.12)
 외모 기반 MBTI 예측 서비스
-- MBTI 데이터셋 크롤링 및 모델 학습
+- MBTI 데이터셋 크롤링
 - MediaPipe 활용 얼굴 검출
+- EfficientNet 모델 구현
 - Streamlit 기반 웹 인터페이스
+- MBTI에 대한 성격, 연애 스타일, 직업, 유명인 소개 구현
 - [Live Demo](https://facembti.streamlit.app)
 - [GitHub Repository](https://github.com/bigdefence/mbti)
 
-### 웹툰 속으로 (2023.11)
-인물 웹툰화 서비스
-- 이미지 자동 로테이션 처리
-- 모델 캐싱을 통한 리소스 최적화
-- PyTorch 기반 웹툰 스타일 변환
-- [Live Demo](https://webtoon.streamlit.app)
-- [GitHub Repository](https://github.com/bigdefence/intothewebtoon)
-
 ### 나의 외모점수는? (2023.10 - 2023.11)
 AI 기반 외모 점수 측정 서비스
+- 데이터셋 분석 및 전처리를 위한 EDA 수행
 - MediaPipe 활용 얼굴 검출
-- Swin-V2-large pretrained 모델 학습
+- Vision Transformer(Swin-V2) 모델 구현
 - Streamlit 기반 웹 인터페이스
 - [Live Demo](https://facescore.streamlit.app)
 - [GitHub Repository](https://github.com/bigdefence/face_score)
