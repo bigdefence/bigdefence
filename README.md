@@ -55,9 +55,9 @@ AI 기반 얼굴 분석 서비스
 - Google Gemini 모델 기반 대화형 인터페이스
 - MediaPipe 활용 얼굴 감지 및 분석
 - 나의 외모점수는?
-   외모점수 Vision Transformer 구현(Swin Transformer)
+   - 외모점수 Vision Transformer 구현(Swin Transformer)
 - AI 패션 스타일리스트 기능
-   생성형 AI(FLUX, Stable Diffusion) 추천된 패션 스타일의 이미지 생성
+   - 생성형 AI(FLUX, Stable Diffusion) 추천된 패션 스타일의 이미지 생성
 - [GitHub Repository](https://github.com/bigdefence/OmniVerse)
 
 ### 음성지원 챗봇 (2024.06 - 2024.07)
