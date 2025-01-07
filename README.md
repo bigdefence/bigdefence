@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514
 - Flask 기반 웹 인터페이스
 - [GitHub Repository](https://github.com/bigdefence/SearchCast)
 
-### AISearchEngine (2024.08 - 2024.09)
+### AI Search Engine (2024.08 - 2024.09)
 통합 검색엔진 시스템
 - Google, Naver, YouTube API 통합 검색
 - asyncio/aiohttp 활용 비동기 처리
@@ -62,6 +62,7 @@ AI 기반 얼굴 분석 서비스
 - 나의 외모점수는?
    - 외모점수 Vision Transformer 구현(Swin Transformer)
 - AI 패션 스타일리스트 기능
+   - 사용자의 특징(성별, 나이대, 체형 등)을 고려한 맞춤형 스타일 제안
    - Text-to-Image(FLUX, Stable Diffusion) 추천된 패션 스타일 이미지 생성
 - [GitHub Repository](https://github.com/bigdefence/OmniVerse)
 
