@@ -75,7 +75,7 @@ LLM 기반 음성 지원 챗봇
 - FastAPI 기반 REST API 구현
 - [GitHub Repository](https://github.com/bigdefence/stt-tts-chatbot)
 
-### LLM Fine-Tunning RAG 챗봇 (2024.05 - 2024.06)
+### LLM Fine-Tunning RAG 챗봇 (2024.05 - 2024.07)
 개인화된 LLM 개발 및 RAG 시스템
 - RAG 시스템 구현 (FAISS, SentenceTransformer)
 - QLoRA 기반 모델 Fine-tuning
