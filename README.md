@@ -22,6 +22,10 @@
 
 ## 🏆 Projects
 
+
+https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514
+
+
 ### SearchCast (2024.10 - 2024.11)
 실시간 AI 기반 팟캐스트 생성 플랫폼
 - 실시간 AI 검색엔진 연계 및 데이터 수집
