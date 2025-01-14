@@ -28,8 +28,8 @@ https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514
 
 ### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 진행중)
 난독화된 텍스트 자동 복원 시스템 개발
-- 원문에서 변형된 한국어 텍스트(철자 오류, 띄어쓰기 왜곡 등)를 복원.
-- LLM(ChatGPT, Gemini, LLaMA, EXAONE, Gemma)를 활용해 문맥 기반 복원을 수행.
+- 난독화된 한국어 텍스트(철자 오류, 띄어쓰기 왜곡 등) 복원.
+- LLM(ChatGPT, Gemini, LLaMA, EXAONE, Gemma)를 활용해 문맥 기반 복원 수행.
 - 자주 발생하는 한국어 오류 유형(모음/자음 대치, 오타, 문장 구조 왜곡)을 분석하여 복원 규칙 정의.
 - LLaMA, EXAONE, GEMMA 등 오픈소스 모델을 특정 도메인(예: 난독화된 리뷰 데이터)에 맞춰 파인튜닝.
 - 데이터 전처리부터 모델 학습 구현.
