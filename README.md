@@ -26,6 +26,9 @@
 
 https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514
 
+
+![화면 캡처 2025-01-16 080717](https://github.com/user-attachments/assets/01c40afe-de82-442c-a995-00ba71b2e66e)
+
 ### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 진행중)
 난독화된 텍스트 자동 복원 시스템 개발
 - 난독화된 한국어 텍스트(철자 오류, 띄어쓰기 왜곡 등) 복원.
