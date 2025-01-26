@@ -27,7 +27,8 @@
 https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514
 
 
-![화면 캡처 2025-01-16 080717](https://github.com/user-attachments/assets/01c40afe-de82-442c-a995-00ba71b2e66e)
+![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
+
 
 ### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 진행중)
 난독화된 텍스트 자동 복원 시스템 개발
