@@ -61,8 +61,8 @@ https://github.com/user-attachments/assets/9ab40757-3bec-458f-b87f-4de58096dbd6
 실시간 AI 기반 팟캐스트 생성 플랫폼
 - 실시간 AI 검색엔진 연계 및 데이터 수집
 - RAG(BM25, FAISS 앙상블) 이용하여 사용자 쿼리와 관련된 콘텐츠의 검색 구현
-- ChatGPT 모델 활용 팟캐스트 대본 생성
-- OpenAI TTS API 활용 팟캐스트 생성
+- ChatGPT API를 활용하여 팟캐스트 대본 자동 생성, 사용자 입력 기반 맞춤형 스크립트 제공
+- OpenAI TTS API를 활용하여 대본을 음성 파일(.mp3)로 변환, 자연스러운 음성 생성
 - 배경음악 추가 및 팟캐스트 믹싱
 - Flask 기반 웹 인터페이스
 - [GitHub Repository](https://github.com/bigdefence/SearchCast)
