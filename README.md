@@ -24,22 +24,19 @@
 ## 🏆 Projects
 
 
-  <video width="500" height="300" controls>
-    <source src="https://github.com/user-attachments/assets/bc4cb6bc-038f-4baa-80d3-3b6d80c5d2fd" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <video width="500" height="300" controls>
-    <source src="https://github.com/user-attachments/assets/0e64f4ac-ac9c-499e-baa4-d89efde91514" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+https://github.com/user-attachments/assets/cba10989-4a06-43f7-a8ba-8f54af443c8e
 
 
 
-  <video width="500" height="300" controls>
-    <source src="https://github.com/user-attachments/assets/9ab40757-3bec-458f-b87f-4de58096dbd6" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+https://github.com/user-attachments/assets/55bc31d8-ab36-4c8a-a280-73f128005da5
+
+
+
+
+
+https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
 
