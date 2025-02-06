@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/9ab40757-3bec-458f-b87f-4de58096dbd6
 
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 
-### ReportCast (2025.02 ~ 진행중)
+### ReportCast (2025.02)
 실시간 인공지능 검색으로 팟캐스트 및 보고서 생성 애플리케이션
 - Gemini Grounding API를 활용하여 최신 검색 결과를 기반으로 콘텐츠 생성 및 팟캐스트·보고서 제작
 - Gemini API를 활용하여 서론-본론-결론 구조의 자동 보고서 생성 및 심층 분석 내용 포함
@@ -42,7 +42,8 @@ https://github.com/user-attachments/assets/9ab40757-3bec-458f-b87f-4de58096dbd6
 - OpenAI TTS API를 활용하여 대본을 음성 파일(.mp3)로 변환, 자연스러운 음성 생성
 - 배경음악 추가 및 팟캐스트 믹싱
 - Flask 기반 웹 인터페이스
-- 
+- [GitHub Repository](https://github.com/bigdefence/ReportCast)
+  
 ### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 진행중)
 난독화된 텍스트 자동 복원 시스템 개발
 - 난독화된 한국어 텍스트(철자 오류, 띄어쓰기 왜곡 등) 복원
