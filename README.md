@@ -47,7 +47,17 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 
-### ReportCast (2025.02)
+### KMMLU evaluate Agent (2025.02)
+Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
+- PyPDF2를 사용하여 PDF 파일에서 텍스트를 추출하고, 불필요한 공백 및 특수문자 제거
+- OpenAI의 text-embedding-3-small를 통해 각 청크에 대한 임베딩 벡터 생성
+- 주어진 질문에 대해 관련 chunk를 검색하여, 답변 생성에 참고할 문맥(context) 제공
+- 검색된 문맥과 함께 형사법 관련 문제의 선택형 질문(옵션 A~D)에 대한 프롬프트 생성
+- OpenAI Batch API를 호출하여 모델 응답을 받고, 실제 정답과 비교하여 평가 정확도 산출
+- 이전에 계산된 임베딩 결과는 캐시 파일(.pkl)로 저장하여, 반복 실행 시 재계산 방지
+- Docker를 사용함으로써, 의존성 관리 및 환경 설정이 용이하며, 동일한 환경에서 일관된 실행 결과 보장
+- [GitHub Repository](https://github.com/bigdefence/kmmlu)
+### ReportCast (2025.01 ~ 2025.02)
 실시간 인공지능 검색으로 팟캐스트 및 보고서 생성 애플리케이션
 - Gemini Grounding API를 활용하여 최신 검색 결과를 기반으로 콘텐츠 생성 및 팟캐스트·보고서 제작
 - Gemini API를 활용하여 서론-본론-결론 구조의 자동 보고서 생성 및 심층 분석 내용 포함
