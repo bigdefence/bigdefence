@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 
-### KMMLU evaluate Agent (2025.02)
+### KMMLU(Criminal-Law) Evaluation Agent (2025.02)
 Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
 - PyPDF2를 사용하여 PDF 파일에서 텍스트를 추출하고, 불필요한 공백 및 특수문자 제거
 - OpenAI의 text-embedding-3-small를 통해 각 청크에 대한 임베딩 벡터 생성
