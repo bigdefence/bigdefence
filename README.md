@@ -55,11 +55,11 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 
 ### Bigdefence LLM 아키텍처 설계 및 사전학습(LLaMA 기반)
-Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하고 개선하여 자체 모델인 'Bigdefence'를 구축했습니다.
+Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
 - LLaMA의 핵심 구조를 분석하고 Grouped Query Attention(GQA), Rotary Position Embedding(RoPE) 등 최신 기법을 적용하여 효율적인 모델 구조 구현
 - LLaMA 모델을 기반으로 Bigdefence(정강빈) 모델 구축
 - 원시 텍스트 수집부터 전처리, 토크나이징, 모델 학습, 추론까지 언어 모델 개발 파이프라인 설계 및 구현
-- 향후계획:
+- 향후 계획:
    - 다양한 한국어 도메인 데이터셋 추가를 통해 언어 이해력 확장
    - SFT(Supervised Fine-Tuning) 기법 적용으로 Instruction 기능 향상 
 - [GitHub Repository](https://github.com/bigdefence/LLM-study)
@@ -79,10 +79,12 @@ Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색
 - Gemini API를 활용하여 서론-본론-결론 구조의 자동 보고서 생성 및 심층 분석 내용 포함
 - Gemini-2.0-flash 모델을 활용해 빠른 응답 시간과 효율적인 정보 처리 가능
 - Gemini-2.0-thinking 모델을 통해 보다 심층적인 분석과 복잡한 질의에 대한 정교한 답변 제공
+- Imagen3를 활용하여 자동으로 보고서 표지를 생성, 높은 품질의 디자인 적용
 - ReportLab을 이용하여 PDF 변환, 한글 폰트(NanumGothic) 적용으로 가독성 향상
 - ChatGPT API를 활용하여 팟캐스트 대본 자동 생성, 사용자 입력 기반 맞춤형 스크립트 제공
 - OpenAI TTS API를 활용하여 대본을 음성 파일(.mp3)로 변환, 자연스러운 음성 생성
 - 배경음악 추가 및 팟캐스트 믹싱
+- 보고서와 팟캐스트를 결합한 멀티미디어 정보 제공
 - Flask 기반 웹 인터페이스
 - [GitHub Repository](https://github.com/bigdefence/ReportCast)
   
