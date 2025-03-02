@@ -22,6 +22,10 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
+## ✍🏻 LLM 공부 기록
+Transformer 기반 언어 모델의 학습 과정(토크나이징, 데이터 전처리, 모델 구현 및 학습)을 실습하고, 텍스트 생성 모델을 구축하는 방법을 공부하고 있습니다.
+- [GitHub Repository](https://github.com/bigdefence/LLM-study)
+  
 ## 🏆 Projects
 
 
@@ -51,9 +55,7 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
-### ✍🏻 LLM 공부 기록
-Transformer 기반 언어 모델의 학습 과정(토크나이징, 데이터 전처리, 모델 구현 및 학습)을 실습하고, 텍스트 생성 모델을 구축하는 방법을 공부하고 있습니다.
-- [GitHub Repository](https://github.com/bigdefence/LLM-study)
+
 
 ### KMMLU(Criminal-Law) Evaluation Agent (2025.02)
 Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
