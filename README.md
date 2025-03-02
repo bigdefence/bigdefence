@@ -60,8 +60,8 @@ Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설
 - LLaMA 모델을 기반으로 Bigdefence(정강빈) 모델 구축
 - 원시 텍스트 수집부터 전처리, 토크나이징, 모델 학습, 추론까지 언어 모델 개발 파이프라인 설계 및 구현
 - 향후계획:
- - 다양한 한국어 도메인 데이터셋 추가를 통해 언어 이해력 확장
- - SFT(Supervised Fine-Tuning) 기법 적용으로 Instruction 기능 향상 
+   - 다양한 한국어 도메인 데이터셋 추가를 통해 언어 이해력 확장
+   - SFT(Supervised Fine-Tuning) 기법 적용으로 Instruction 기능 향상 
 - [GitHub Repository](https://github.com/bigdefence/LLM-study)
 ### KMMLU(Criminal-Law) Evaluation Agent (2025.02)
 Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
