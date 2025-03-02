@@ -54,9 +54,14 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 ![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 
-### Custom LLM 사전학습
-Transformer 기반 언어 모델의 학습 과정(토크나이징, 데이터 전처리, 모델 구현 및 학습)을 실습하고, 텍스트 생성 모델을 구축하는 방법을 공부하고 있습니다.
-- LLaMA 모델 기반의 Bigdefence(정강빈)모델 구축(오픈소스 데이터셋을 이용하여 모델 Pre-train)
+### Bigdefence LLM 아키텍처 설계 및 사전학습(LLaMA 기반)
+Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하고 개선하여 자체 모델인 'Bigdefence'를 구축했습니다.
+- LLaMA의 핵심 구조를 분석하고 Grouped Query Attention(GQA), Rotary Position Embedding(RoPE) 등 최신 기법을 적용하여 효율적인 모델 구조 구현
+- LLaMA 모델을 기반으로 Bigdefence(정강빈) 모델 구축
+- 원시 텍스트 수집부터 전처리, 토크나이징, 모델 학습, 추론까지 언어 모델 개발 파이프라인 설계 및 구현
+- 향후계획:
+ - 다양한 한국어 도메인 데이터셋 추가를 통해 언어 이해력 확장
+ - SFT(Supervised Fine-Tuning) 기법 적용으로 Instruction 기능 향상 
 - [GitHub Repository](https://github.com/bigdefence/LLM-study)
 ### KMMLU(Criminal-Law) Evaluation Agent (2025.02)
 Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
