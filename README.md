@@ -88,7 +88,7 @@ Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색
 - Flask 기반 웹 인터페이스
 - [GitHub Repository](https://github.com/bigdefence/ReportCast)
   
-### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 진행중)
+### 난독화된 한글 리뷰 데이터 복원 (2025.01 ~ 2025.02)
 난독화된 텍스트 자동 복원 시스템 개발
 - 난독화된 한국어 텍스트(철자 오류, 띄어쓰기 왜곡 등) 복원
 - LLM(ChatGPT, Gemini, LLaMA, EXAONE, Gemma)를 활용해 문맥 기반 복원 수행
