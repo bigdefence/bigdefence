@@ -37,9 +37,6 @@ https://github.com/user-attachments/assets/55bc31d8-ab36-4c8a-a280-73f128005da5
 https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
-
-
-![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 ## 🏆 Projects
 
 ### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
