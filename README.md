@@ -27,8 +27,8 @@
 - **End-to-End 음성 대화 시스템**: 음성 입력부터 음성 출력까지 완전한 파이프라인 구현
 - **멀티모달 아키텍처**: Audio → Speech Encoder → Downsampling Adaptor → LLM Backbone → Speech Projector → Speech Decoder → Audio
 - **한국어 특화 학습**: 직접 구축한 한국어 음성 데이터셋으로 2단계 학습 과정 수행
-  - Stage 1: 음성 쿼리와 텍스트 응답 쌍을 활용해 음성 인코더와 LLM의 embedding 공간을 정렬하며, LLM에 LoRA로 멀티모달 적응을 수행
-  - Stage 2: 음성 쿼리-음성 응답 쌍 기반으로 speech projector 및 decoder를 고정된 LLM 위에 학습시켜, 실제 음성 생성 능력을 부여
+  - Stage 1: 음성 쿼리와 텍스트 응답을 활용해 음성 인코더와 LLM의 embedding 공간을 정렬하며, LLM에 LoRA로 멀티모달 적응을 수행
+  - Stage 2: 음성 쿼리-음성 토큰 기반으로 speech projector 및 decoder를 고정된 LLM 위에 학습시켜, 실제 음성 생성 능력을 부여
 - **실시간 웹 인터페이스**: Flask 기반 실시간 음성 대화 시스템 구현
 - **고성능 최적화**: PyTorch, Transformers, DeepSpeed, LoRA/PEFT 활용한 효율적 학습
 - **TTS 통합**: CosyVoice, Matcha-TTS를 활용한 자연스러운 음성 합성
