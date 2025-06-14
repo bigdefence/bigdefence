@@ -2,8 +2,6 @@
 ### ML/DL Developer | AI Engineer
 ![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=bigdefence)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbigdefence&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-
 ## 🚀 About Me
 코드로 세상을 바꾸는 개발자를 꿈꾸고 있습니다. 차별화된 서비스를 만들어내며, 사람들이 필요로 하는 것이 무엇인지 고민하는 AI 개발자입니다.
 
@@ -22,37 +20,18 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
-
-  
 ## 🏆 Projects
 
-
-
-
-
-
-
-https://github.com/user-attachments/assets/75e7a99e-df4a-4e28-876f-cf736503f9bf
-
-
-
-https://github.com/user-attachments/assets/c1bbae8f-61cf-4605-86bc-7fe767136010
-
-
-
-
-https://github.com/user-attachments/assets/55bc31d8-ab36-4c8a-a280-73f128005da5
-
-
-
-
-
-https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
-
-
-
-
-![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
+### 🎙️ VocalNet: 한국어 Speech-to-Speech 멀티모달 AI (2025.02)
+한국어 데이터셋을 직접 구축하여 학습한 Speech-to-Speech 멀티모달 AI 모델
+- **End-to-End 음성 대화 시스템**: 음성 입력부터 음성 출력까지 완전한 파이프라인 구현
+- **멀티모달 아키텍처**: Audio → Speech Encoder → Downsampling Adaptor → LLM Backbone → Speech Projector → Speech Decoder → Audio
+- **한국어 특화 학습**: 직접 구축한 한국어 음성 데이터셋으로 3단계 학습 과정 수행
+  - Stage 1: 음성 인코더 사전 학습
+  - Stage 2: LLM과 음성 모달리티 정렬
+- **실시간 웹 인터페이스**: Flask 기반 실시간 음성 대화 시스템 구현
+- **고성능 최적화**: PyTorch, Transformers, DeepSpeed, LoRA/PEFT 활용한 효율적 학습
+- **TTS 통합**: CosyVoice, Matcha-TTS를 활용한 자연스러운 음성 합성
 
 ### Bigdefence LLM 아키텍처 설계 및 사전학습(LLaMA 기반)
 Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
@@ -63,6 +42,7 @@ Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설
    - 다양한 한국어 도메인 데이터셋 추가를 통해 언어 이해력 확장
    - SFT(Supervised Fine-Tuning) 기법 적용으로 Instruction 기능 향상 
 - [GitHub Repository](https://github.com/bigdefence/LLM-study)
+
 ### KMMLU(Criminal-Law) Evaluation Agent (2025.02)
 Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색 시스템을 활용하여 질문-응답 평가를 수행
 - PyPDF2를 사용하여 PDF 파일에서 텍스트를 추출하고, 불필요한 공백 및 특수문자 제거
@@ -73,6 +53,7 @@ Criminal-Law 분야의 법률 질문에 대해 OpenAI API와 FAISS 기반 검색
 - 이전에 계산된 임베딩 결과는 캐시 파일(.pkl)로 저장하여, 반복 실행 시 재계산 방지
 - Docker를 사용함으로써, 의존성 관리 및 환경 설정이 용이하며, 동일한 환경에서 일관된 실행 결과 보장
 - [GitHub Repository](https://github.com/bigdefence/kmmlu)
+
 ### ReportCast (2025.01 ~ 2025.02)
 실시간 인공지능 검색으로 팟캐스트 및 보고서 생성 애플리케이션
 - Gemini Grounding API를 활용하여 최신 검색 결과를 기반으로 콘텐츠 생성 및 팟캐스트·보고서 제작
@@ -158,7 +139,7 @@ LLM 기반 음성 지원 챗봇
 - [GitHub Repository](https://github.com/bigdefence/rag_chatbot)
 
 ### 기억나래 (2024.06)
-외로운 일상의 소중한 기억을 지켜주는 인공지능 ‘기억나래’
+외로운 일상의 소중한 기억을 지켜주는 인공지능 '기억나래'
 - STT/TTS 기술 활용 자연스러운 음성 대화
 - ChatGPT API 활용 대화 및 일기 생성
 - DALL-E 3 모델 활용 그림일기 생성
@@ -166,7 +147,7 @@ LLM 기반 음성 지원 챗봇
 - [GitHub Repository](https://github.com/bigdefence/hackathon)
 
 ### MusicFace (2024.05 - 2024.06)
-얼굴 분석을 통한 ‘나만의 음악’ 생성 인공지능 ‘Music Face’
+얼굴 분석을 통한 '나만의 음악' 생성 인공지능 'Music Face'
 - MediaPipe 활용 얼굴 검출
 - Vision Transformer(BEiT-V2, Swin-V2)모델 구현
 - 얼굴 분석 내용 기반 LLaMA3를 활용하여 음악 장르 및 분위기 추천 시스템 구현
@@ -230,5 +211,4 @@ AI 기반 외모 점수 측정 서비스
 
 ## 📧 Contact
 - Email: wjdrkdqls12@gmail.com
-- Phone: 010-3777-8058
-
+- Phone: 010-3777-8058 
