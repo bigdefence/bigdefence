@@ -19,7 +19,27 @@
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+https://github.com/user-attachments/assets/75e7a99e-df4a-4e28-876f-cf736503f9bf
 
+
+
+https://github.com/user-attachments/assets/c1bbae8f-61cf-4605-86bc-7fe767136010
+
+
+
+
+https://github.com/user-attachments/assets/55bc31d8-ab36-4c8a-a280-73f128005da5
+
+
+
+
+
+https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
+
+
+
+
+![스크린샷 2025-01-26 112129](https://github.com/user-attachments/assets/432794e2-f023-45d5-a12b-0e6d00e45807)
 ## 🏆 Projects
 
 ### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
