@@ -22,8 +22,9 @@
 
 ## 🏆 Projects
 
-### 🎙️ Speech-To-Speech 음성 멀티모달 개발 (2025.03 ~ 2025.06)
-한국어 데이터셋을 직접 구축하여 학습한 Speech-to-Speech 멀티모달 AI 모델
+### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
+"영어 중심 한계를 넘어: 한국어 전용 Speech-to-Speech 멀티모달 시스템 End-to-End 개발"
+
 - **End-to-End 음성 대화 시스템**: 음성 입력부터 음성 출력까지 완전한 파이프라인 구현
 - **멀티모달 아키텍처**: Audio → Speech Encoder → Downsampling Adaptor → LLM Backbone → Speech Projector → Speech Decoder → Audio
 - **한국어 특화 학습**: 직접 구축한 한국어 음성 데이터셋으로 2단계 학습 과정 수행
