@@ -42,9 +42,7 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
   - **Llama-3.2-1B-Instruct**: Meta의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
   - **HyperCLOVAX-SEED-Text-Instruct-0.5B**: 네이버의 한국어 특화 모델로 한국어 음성 명령 이해 및 응답 품질 극대화
 - **고급 음성 이해**: Whisper 기반 Mel-spectrogram 변환으로 음성 명령의 의미와 맥락을 정확히 파악
-- **지능형 명령 처리**: 음성 입력을 LLM이 이해할 수 있는 형태로 변환하여 적절한 instruction following 수행
 - **모델 적응형 추론**: 언어 모델별 최적화된 토크나이저 및 생성 매개변수로 각 모델의 성능 최대화
-
 
 ### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
 "영어 중심 한계를 넘어: 한국어 전용 Speech-to-Speech 멀티모달 시스템 End-to-End 개발"
