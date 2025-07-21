@@ -32,6 +32,21 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 ## 🏆 Projects
 
+### 🎙️ BigVox 음성 멀티모달 시스템 개발 (2025.06 ~ 2025.07)
+"음성으로 소통하는 AI: 음성 입력을 이해하고 지능적으로 응답하는 멀티모달 LLM 시스템 구현"
+BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 멀티모달 AI 모델입니다. 음성 명령을 이해하고 적절한 텍스트 응답을 생성하는 기능을 제공하며, **허깅페이스에 오픈소스로 공개**되어 누구나 자유롭게 사용할 수 있습니다.
+
+- **End-to-End 음성 명령 이해 시스템**: 원시 오디오 입력부터 지능적인 텍스트 응답까지 완전한 파이프라인 구현
+- **멀티모달 아키텍처**: Audio → Speech Encoder → Speech Projector → LLM Backbone → Instruction Following → Text Response
+- **다중 언어 모델 백본 지원**: 
+  - **Llama-3.2-1B-Instruct**: Meta의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
+  - **HyperCLOVAX-SEED-Text-Instruct-0.5B**: 네이버의 한국어 특화 모델로 한국어 음성 명령 이해 및 응답 품질 극대화
+- **고급 음성 이해**: Whisper 기반 Mel-spectrogram 변환으로 음성 명령의 의미와 맥락을 정확히 파악
+- **지능형 명령 처리**: 음성 입력을 LLM이 이해할 수 있는 형태로 변환하여 적절한 instruction following 수행
+- **모델 적응형 추론**: 언어 모델별 최적화된 토크나이저 및 생성 매개변수로 각 모델의 성능 최대화
+- **유연한 응답 생성**: Temperature, Beam Search, Top-p 샘플링 등 다양한 매개변수로 응답 품질 조절
+
+
 ### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
 "영어 중심 한계를 넘어: 한국어 전용 Speech-to-Speech 멀티모달 시스템 End-to-End 개발"
 
@@ -42,6 +57,7 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
   - Stage 2: 음성 쿼리-음성 토큰 기반으로 speech projector 및 decoder를 고정된 LLM 위에 학습시켜, 실제 음성 생성 능력을 부여
 - **고성능 최적화**: PyTorch, Transformers, DeepSpeed, LoRA/PEFT 활용한 효율적 학습
 - **TTS 통합**: CosyVoice, Matcha-TTS를 활용한 자연스러운 음성 합성
+
 
 ### Bigdefence LLM 아키텍처 설계 및 사전학습(LLaMA 기반)
 Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
