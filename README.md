@@ -58,7 +58,7 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
 - **TTS 통합**: CosyVoice, Matcha-TTS를 활용한 자연스러운 음성 합성
 
 
-### Bigdefence LLM 아키텍처 설계 및 사전학습(LLaMA 기반)
+### Bigdefence LLM 아키텍처 설계 및 사전학습(from scratch)
 Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
 - LLaMA의 핵심 구조를 분석하고 Grouped Query Attention(GQA), Rotary Position Embedding(RoPE) 등 최신 기법을 적용하여 효율적인 모델 구조 구현
 - LLaMA 모델을 기반으로 Bigdefence(정강빈) 모델 구축
