@@ -38,15 +38,15 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
 - **End-to-End 음성 명령 이해 시스템**: 원시 오디오 입력부터 지능적인 텍스트 응답까지 완전한 파이프라인 구현
 - **멀티모달 아키텍처**: Audio → Speech Encoder → Speech Projector → LLM Backbone → Text Response
 - **다중 언어 모델 백본 지원**:
- - **Llama-3.2-1B-Instruct**: Meta의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
- - **HyperCLOVAX-SEED-Text-Instruct-0.5B**: 네이버의 한국어 특화 모델로 한국어 음성 명령 이해 및 응답 품질 극대화
- - **kakaocorp/kanana-1.5-2.1b-instruct-2505**: 카카오의 최신 한국어 특화 모델을 음성 멀티모달로 확장 개발 완료! 한국어 음성 이해 및 자연스러운 대화 능력이 크게 향상
+   - **Llama-3.2-1B-Instruct**: Meta의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
+   - **HyperCLOVAX-SEED-Text-Instruct-0.5B**: 네이버의 한국어 특화 모델로 한국어 음성 명령 이해 및 응답 품질 극대화
+   - **kakaocorp/kanana-1.5-2.1b-instruct-2505**: 카카오의 최신 한국어 특화 모델을 음성 멀티모달로 확장 개발 완료! 한국어 음성 이해 및 자연스러운 대화 능력이 크게 향상
  - **K-intelligence/Midm-2.0-Mini-Instruct**: KT의 최신 언어 모델을 기반으로 한국어 음성 텍스트 멀티모달 능력을 향상
 - **고급 음성 이해**: Whisper 기반 Mel-spectrogram 변환으로 음성 명령의 의미와 맥락을 정확히 파악
 - **모델 적응형 추론**: 언어 모델별 최적화된 토크나이저 및 생성 매개변수로 각 모델의 성능 최대화
 - **실시간 음성 대화(Speech-to-Speech, S2S)**: BigVox에 CosyVoice2 TTS를 연동하여 텍스트 응답을 초저지연 음성으로 실시간 스트리밍
- - **파이프라인**: 브라우저 VAD 녹음 → BigVox STT/LLM 응답 → CosyVoice2 TTS → 16kHz PCM 마이크로 청크(약 2ms, 64B) 스트리밍 재생
- - 이전 스트림 즉시 취소, 첫 청크 즉시 전송, 재생 속도(0.2~5.0x) 및 보이스(cosy_man / cosy_woman) 선택 지원
+   - **파이프라인**: 브라우저 VAD 녹음 → BigVox STT/LLM 응답 → CosyVoice2 TTS → 16kHz PCM 마이크로 청크(약 2ms, 64B) 스트리밍 재생
+   - 이전 스트림 즉시 취소, 첫 청크 즉시 전송, 재생 속도(0.2~5.0x) 및 보이스(cosy_man / cosy_woman) 선택 지원
 
 ### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
 "영어 중심 한계를 넘어: 한국어 전용 Speech-to-Speech 멀티모달 시스템 End-to-End 개발"
