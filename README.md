@@ -50,10 +50,7 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
    - **kakaocorp/kanana-1.5-2.1b-instruct-2505**: 카카오의 최신 한국어 특화 모델을 음성 멀티모달로 확장 개발 완료! 한국어 음성 이해 및 자연스러운 대화 능력이 크게 향상
  - **K-intelligence/Midm-2.0-Mini-Instruct**: KT의 최신 언어 모델을 기반으로 한국어 음성 텍스트 멀티모달 능력을 향상
 - **고급 음성 이해**: Whisper 기반 Mel-spectrogram 변환으로 음성 명령의 의미와 맥락을 정확히 파악
-- **모델 적응형 추론**: 언어 모델별 최적화된 토크나이저 및 생성 매개변수로 각 모델의 성능 최대화
-- **실시간 음성 대화(Speech-to-Speech, S2S)**: BigVox에 CosyVoice2 TTS를 연동하여 텍스트 응답을 음성으로 실시간 스트리밍
-   - **파이프라인**: 브라우저 VAD 녹음 → BigVox 응답 → CosyVoice2 TTS → 16kHz PCM 마이크로 청크(약 2ms, 64B) 스트리밍 재생
-   - 이전 스트림 즉시 취소, 첫 청크 즉시 전송, 재생 속도(0.2~5.0x) 및 보이스(남성/여성) 선택 지원
+
 
 ### Bigdefence LLM 아키텍처 설계 및 사전학습(from scratch)
 Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
