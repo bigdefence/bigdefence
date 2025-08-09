@@ -30,8 +30,15 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
 ## 🏆 Projects
+### 🎙️ 실시간 Speech-to-Speech 대화 서비스 구축: BigVox × CosyVoice2 (2025.06 ~ 2025.08)
+- **프로젝트 목표**: 저지연 음성-음성 대화 경험을 제공하기 위해 BigVox(Audio LLM)와 CosyVoice2(TTS)를 결합한 실시간 양방향 대화 시스템을 구축했습니다.
+- **스트리밍 파이프라인**: 마이크 입력 → VAD 처리 → LLM 토큰 스트리밍 → CosyVoice2 즉시 합성으로 이어지는 저지연 파이프라인을 구축했습니다.
+- **바지인(barge-in) 지원**: 사용자가 말을 겹쳐 시작하면 진행 중인 합성을 즉시 중단하고 대화 큐를 재정렬하여 지연 없이 새 발화로 핸드오프합니다.
+- **실시간 중간 응답**: LLM의 토큰 스트림을 문장-조각 단위로 버퍼링해 CosyVoice2가 프리롤 합성을 먼저 시작하고, 이후 오디오를 끊김 없이 이어붙이도록 설계했습니다.
+- **모듈 구성**: Speech Encoder → Speech Projector → LLM Backbone → CosyVoice2 스트리밍 합성으로 구성된 음성 대화 스택을 구현했습니다.
+- **백본 모델**: Llama-3.2-1B-Instruct, HyperCLOVAX-SEED-Text-Instruct-0.5B, Kanana-1.5-2.1b-instruct-2505, Kintelligence/Midm-2.0-Mini-Instruct
 
-### 🎙️ BigVox 한국어 음성 멀티모달 시스템 개발 (2025.06 ~ 2025.08)
+### 🎙️ BigVox 한국어 음성 멀티모달 시스템 개발 (2025.03 ~ 2025.08)
 "음성으로 소통하는 AI: 음성 입력을 이해하고 지능적으로 응답하는 멀티모달 LLM 시스템 구현"<br>
 BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 멀티모달 AI 모델입니다. 음성 명령을 이해하고 적절한 텍스트 응답을 생성하는 기능을 제공하며, 허깅페이스에 오픈소스로 공개되어 누구나 자유롭게 사용할 수 있습니다.
 
@@ -47,18 +54,6 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
 - **실시간 음성 대화(Speech-to-Speech, S2S)**: BigVox에 CosyVoice2 TTS를 연동하여 텍스트 응답을 음성으로 실시간 스트리밍
    - **파이프라인**: 브라우저 VAD 녹음 → BigVox 응답 → CosyVoice2 TTS → 16kHz PCM 마이크로 청크(약 2ms, 64B) 스트리밍 재생
    - 이전 스트림 즉시 취소, 첫 청크 즉시 전송, 재생 속도(0.2~5.0x) 및 보이스(남성/여성) 선택 지원
-
-### 🎙️ Speech-To-Speech 한국어 음성 멀티모달 개발 (2025.03 ~ 2025.06)
-"영어 중심 한계를 넘어: 한국어 전용 Speech-to-Speech 멀티모달 시스템 End-to-End 개발"
-
-- **End-to-End 음성 대화 시스템**: 음성 입력부터 음성 출력까지 완전한 파이프라인 구현
-- **멀티모달 아키텍처**: Audio → Speech Encoder → Downsampling Adaptor → LLM Backbone → Speech Projector → Speech Decoder → Audio
-- **한국어 특화 학습**: 직접 구축한 한국어 음성 데이터셋으로 2단계 학습 과정 수행
-  - Stage 1: 음성 쿼리와 텍스트 응답을 활용해 음성 인코더와 LLM의 embedding 공간을 정렬하며, LLM에 LoRA로 멀티모달 적응을 수행
-  - Stage 2: 음성 쿼리-음성 토큰 기반으로 speech projector 및 decoder를 고정된 LLM 위에 학습시켜, 실제 음성 생성 능력을 부여
-- **고성능 최적화**: PyTorch, Transformers, DeepSpeed, LoRA/PEFT 활용한 효율적 학습
-- **TTS 통합**: CosyVoice, Matcha-TTS를 활용한 자연스러운 음성 합성
-
 
 ### Bigdefence LLM 아키텍처 설계 및 사전학습(from scratch)
 Transformer 아키텍처를 기반으로 한국어에 최적화된 모델을 설계하고 사전학습했습니다. LLaMA 모델의 핵심 아키텍처를 분석하여 자체 모델인 'Bigdefence LLM'을 구축했습니다.
