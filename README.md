@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 - **바지인(barge-in) 지원**: 사용자가 말을 겹쳐 시작하면 진행 중인 합성을 즉시 중단하고 대화 큐를 재정렬하여 지연 없이 새 발화로 핸드오프합니다.
 - **실시간 중간 응답**: LLM의 토큰 스트림을 문장-조각 단위로 버퍼링해 CosyVoice2가 프리롤 합성을 먼저 시작하고, 이후 오디오를 끊김 없이 이어붙이도록 설계했습니다.
 - **모듈 구성**: Speech Encoder → Speech Projector → LLM Backbone → CosyVoice2 스트리밍 합성으로 구성된 음성 대화 스택을 구현했습니다.
-- **백본 모델**: Llama-3.2-1B-Instruct, HyperCLOVAX-SEED-Text-Instruct-0.5B, Kanana-1.5-2.1b-instruct-2505, Kintelligence/Midm-2.0-Mini-Instruct
+- **백본 모델**: LGAI-EXAONE/EXAONE-4.0-1.2B, HyperCLOVAX-SEED-Text-Instruct-0.5B, Kanana-1.5-2.1b-instruct-2505, Kintelligence/Midm-2.0-Mini-Instruct
 
 ### 🎙️ BigVox 한국어 음성 멀티모달 시스템 개발 (2025.03 ~ 2025.08)
 "음성으로 소통하는 AI: 음성 입력을 이해하고 지능적으로 응답하는 멀티모달 LLM 시스템 구현"<br>
@@ -45,7 +45,7 @@ BigVox는 최신 딥러닝 기술을 활용한 고성능 음성 입력 기반 �
 - **End-to-End 음성 명령 이해 시스템**: 원시 오디오 입력부터 지능적인 텍스트 응답까지 완전한 파이프라인 구현
 - **멀티모달 아키텍처**: Audio → Speech Encoder → Speech Projector → LLM Backbone → Text Response
 - **다중 언어 모델 백본 지원**:
-   - **Llama-3.2-1B-Instruct**: Meta의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
+   - **LGAI-EXAONE/EXAONE-4.0-1.2B**: LG의 최신 경량화 언어 모델을 활용한 효율적인 명령 이해 및 응답 생성
    - **HyperCLOVAX-SEED-Text-Instruct-0.5B**: 네이버의 한국어 특화 모델로 한국어 음성 명령 이해 및 응답 품질 극대화
    - **kakaocorp/kanana-1.5-2.1b-instruct-2505**: 카카오의 최신 한국어 특화 모델을 음성 멀티모달로 확장 개발 완료! 한국어 음성 이해 및 자연스러운 대화 능력이 크게 향상
    - **K-intelligence/Midm-2.0-Mini-Instruct**: KT의 최신 언어 모델을 기반으로 한국어 음성 텍스트 멀티모달 능력을 향상
