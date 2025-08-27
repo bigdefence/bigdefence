@@ -30,6 +30,18 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
 ## 🏆 Projects
+### 🖼️ Midm-Vision – 한국어 End-to-End 이미지-텍스트 멀티모달 모델 개발
+- **프로젝트 목표**: "이미지로 소통하는 AI: 이미지 입력을 이해하고 한국어로 지능적 응답하는 Vision-Language 시스템 구현"
+- **End-to-End 이미지 이해 시스템**: 원시 이미지 입력부터 지능적인 한국어 텍스트 응답까지 완전한 파이프라인 구현
+- **멀티모달 아키텍처**: Image Input → Vision Encoder → Vision Projector → LLM Backbone → Korean Text Response
+- **LLM 모델 백본 활용**:
+  - K-intelligence/Midm-2.0-Mini-Instruct: KT의 한국어 특화 경량 언어 모델 기반 이미지 이해 및 한국어 응답
+  - 2B 파라미터 경량화: 실시간 추론 가능한 크기로 모바일/엣지 활용
+- **학습 전략**:
+  - Stage 1 — Pretrain: Vision Projector 단독 학습으로 Vision Encoder 출력과 LLM 입력 임베딩 정렬
+  - Stage 2 — Finetune: Vision Projector + LLM LoRA(Instruct-following) 공동 미세조정으로 효율적 지시 따르기 성능 향상
+- **오픈 데이터셋 및 오픈소스**: 공개 한국어 이미지-텍스트 데이터셋 학습, Apache 2.0으로 허깅페이스/깃허브 공개
+- **실시간 추론 시스템**: 스트리밍 처리, 배치 처리, CPU/GPU 자동 감지 및 최적 디바이스 할당
 ### 🎙️ 실시간 Speech-to-Speech 대화 서비스 구축: BigVox × CosyVoice2 (2025.06 ~ 2025.08)
 - **프로젝트 목표**: 저지연 음성-음성 대화 경험을 제공하기 위해 BigVox(Audio LLM)와 CosyVoice2(TTS)를 결합한 실시간 양방향 대화 시스템을 구축했습니다.
 - **스트리밍 파이프라인**: 마이크 입력 → VAD 처리 → LLM 토큰 스트리밍 → CosyVoice2 즉시 합성으로 이어지는 저지연 파이프라인을 구축했습니다.
