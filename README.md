@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 
 
 ## 🏆 Projects
-### 🖼️ Midm-Vision – 한국어 End-to-End 이미지-텍스트 멀티모달 모델 개발
+### 🖼️ Midm-Vision – 한국어 End-to-End 이미지-텍스트 멀티모달 모델 개발 (2025.08 ~ 진행중)
 - **프로젝트 목표**: "이미지로 소통하는 AI: 이미지 입력을 이해하고 한국어로 지능적 응답하는 Vision-Language 시스템 구현"
 - **End-to-End 이미지 이해 시스템**: 원시 이미지 입력부터 지능적인 한국어 텍스트 응답까지 완전한 파이프라인 구현
 - **멀티모달 아키텍처**: Image Input → Vision Encoder → Vision Projector → LLM Backbone → Korean Text Response
