@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/e20f70cb-1f8f-4556-a327-ca4de22e5d41
 https://github.com/user-attachments/assets/66c54d10-e159-4518-808b-bbdad138db4b
 
 ## 🏆 Projects
-### 🤖 MIDM V2 – 실시간 멀티모달 AI 음성 채팅 웹서비스 개발 (2025.08 ~ 진행중)
+### 🤖 MIDM V2 – 실시간 멀티모달 AI 음성-이미지 채팅 웹서비스 개발 (2025.08 ~ 진행중)
 
 - **프로젝트 목표**: "보고 듣고 말하는 AI: 실시간 음성과 이미지를 이해하여 자연스러운 음성으로 응답하는 멀티모달 대화 시스템 구현"
 - **멀티모달 처리**: 음성 입력 + 카메라 이미지 동시 처리부터 스트리밍 음성 응답까지 파이프라인 구현 
