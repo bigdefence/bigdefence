@@ -28,13 +28,13 @@ https://github.com/user-attachments/assets/c1bbae8f-61cf-4605-86bc-7fe767136010
 
 https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b
 <!-- 영상 크기 조절 -->
-<video src="https://github.com/user-attachments/assets/e20f70cb-1f8f-4556-a327-ca4de22e5d41" width="400" controls></video>
+<video src="https://github.com/user-attachments/assets/e20f70cb-1f8f-4556-a327-ca4de22e5d41" width="200" controls></video>
 
-<video src="https://github.com/user-attachments/assets/66c54d10-e159-4518-808b-bbdad138db4b" width="400" controls></video>
+<video src="https://github.com/user-attachments/assets/66c54d10-e159-4518-808b-bbdad138db4b" width="200" controls></video>
 
-<video src="https://github.com/user-attachments/assets/c1bbae8f-61cf-4605-86bc-7fe767136010" width="400" controls></video>
+<video src="https://github.com/user-attachments/assets/c1bbae8f-61cf-4605-86bc-7fe767136010" width="200" controls></video>
 
-<video src="https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b" width="400" controls></video>
+<video src="https://github.com/user-attachments/assets/cfaba4f3-3886-4152-ac54-42af4ea0e84b" width="200" controls></video>
 
 
 ## 🏆 Projects
