@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/66c54d10-e159-4518-808b-bbdad138db4b
 
 - **프로젝트 목표**: "보고 듣고 말하는 AI: 실시간 음성과 이미지를 이해하여 자연스러운 음성으로 응답하는 멀티모달 대화 시스템 구현"
 - **멀티모달 처리**: 음성 입력 + 카메라 이미지 동시 처리부터 스트리밍 음성 응답까지 파이프라인 구현 
-- **멀티모달 아키텍처**: Audio Input + Image Input → STT (Faster-Whisper) → Vision-Language Model (LLAVA) → Streaming TTS (OpenAI) → Real-time Voice Response  
+- **멀티모달 아키텍처**: Audio Input + Image Input → Faster-Whisper → Midm-2.0-Mini-Vision-Instruct → Streaming TTS (OpenAI) → Real-time Voice Response  
 - **LLM 백본 및 멀티모달 모델**:
   - **bigdefence/Midm-2.0-Mini-Vision-Instruct**: 오픈소스 LLM **Midm-2.0-Mini-Instruct**를 직접 확장하여 개발한 이미지-텍스트 멀티모달 모델로 Vision Encoder와 LLM을 통합해 시각 정보와 언어 정보를 동시에 이해할 수 있도록 최적화한 자체 개발 VLM.
   - **Faster-Whisper**: OpenAI Whisper 기반 고속 실시간 음성 인식 (CPU/GPU 최적화)
