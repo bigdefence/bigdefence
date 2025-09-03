@@ -33,8 +33,7 @@ https://github.com/user-attachments/assets/66c54d10-e159-4518-808b-bbdad138db4b
 - **멀티모달 아키텍처**: Audio Input + Image Input → STT (Faster-Whisper) → Vision-Language Model (LLAVA) → Streaming TTS (OpenAI) → Real-time Voice Response  
 
 - **LLM 백본 및 멀티모달 모델**:
-  - **bigdefence/Midm-2.0-Mini-Vision-Instruct**: 오픈소스 LLM **Midm-2.0-Mini-Instruct**를 직접 확장하여 개발한 이미지-텍스트 멀티모달 모델.  
-  Vision Encoder와 LLM을 통합해 시각 정보와 언어 정보를 동시에 이해할 수 있도록 최적화한 자체 개발 VLM.
+  - **bigdefence/Midm-2.0-Mini-Vision-Instruct**: 오픈소스 LLM **Midm-2.0-Mini-Instruct**를 직접 확장하여 개발한 이미지-텍스트 멀티모달 모델로 Vision Encoder와 LLM을 통합해 시각 정보와 언어 정보를 동시에 이해할 수 있도록 최적화한 자체 개발 VLM.
   - **Faster-Whisper**: OpenAI Whisper 기반 고속 실시간 음성 인식 (CPU/GPU 최적화)
   - **OpenAI TTS**: 실시간 스트리밍 음성 합성으로 지연시간 최소화
 
