@@ -82,7 +82,7 @@
 ## 🏆 Featured Projects
 
 ### 🤖 MIDM - 한국어 멀티모달 AI 대화 시스템
-**2025.08 - 현재** | [GitHub](https://github.com/bigdefence/MIDM-V2)
+**2025.08 - 2025.10** | [HuggingFace](https://huggingface.co/bigdefence)
 
 > 음성·이미지 입력을 동시 이해하여 실시간 음성으로 응답하는 End-to-End 멀티모달 대화 플랫폼
 
