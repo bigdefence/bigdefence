@@ -304,7 +304,6 @@ Audio Input + Image Input → Faster-Whisper → Midm-2.0-Mini-Vision-Instruct �
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bigdefence)
 [![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=for-the-badge)](https://huggingface.co/bigdefence)
-[![Notion](https://img.shields.io/badge/Notion_Portfolio-000000?style=for-the-badge&logo=notion&logoColor=white)](https://navy-ellipse-684.notion.site/afcd3d1da3b743e4bef129aa7a5150ae?pvs=74)
 
 ### 📧 wjdrkdqls12@gmail.com | 📱 010-3777-8058
 
