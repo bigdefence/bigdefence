@@ -81,26 +81,80 @@
 
 ## 🏆 Featured Projects
 
-### 🤖 MIDM - 한국어 멀티모달 AI 대화 시스템
-**2025.08 - 2025.10** | [HuggingFace](https://huggingface.co/bigdefence)
+### 🎨 LUMIÈRE AI Studio - AI 기반 광고 생성 에이전트
+**2025.11** | [GitHub](https://github.com/bigdefence/ad-agent)
 
-> 음성·이미지 입력을 동시 이해하여 실시간 음성으로 응답하는 End-to-End 멀티모달 대화 플랫폼
+> 제품 사진 한 장으로 기획부터 디자인까지: AI가 브랜드 무드를 분석하여 상업용 광고 이미지를 즉시 생성하는 에이전트
 
 **🎯 핵심 성과**
-- ✅ **자체 VLM 개발**: Midm-2.0-Mini-Instruct 기반 Vision-Language Model 직접 개발
-- ✅ **2단계 학습 전략**: Stage1-Pretrain(Vision Projector 정렬) → Stage2-Finetune(LoRA 공동 미세조정)
-- ✅ **GPU 메모리 최적화**: 효율적 학습 전략으로 60% 메모리 절감
-- ✅ **실시간 파이프라인**: Audio+Image → STT → VLM → Streaming TTS → Real-time Voice
+- ✅ **제품 완벽 보존**: 제품 원본을 완벽하게 보존하면서 배경만 자연스럽게 합성하는 기술 구현
+- ✅ **타겟 맞춤 컨셉**: 타겟 오디언스(20대 여성, 럭셔리 등)별 맞춤형 광고 컨셉 자동 제안
+- ✅ **전문가급 UX**: 직관적인 UI/UX로 전문가 수준의 광고 크리에이티브 제작 경험 제공
 
-**🔧 기술 스택**
+**🔧 기술적 구현**
+
+**1. 제품 분석 및 광고 프롬프트 생성**
+- **Gemini-2.5-flash 활용**: 제품의 디자인·색상·재질·브랜드 무드 심층 분석
+- **자동 프롬프트 생성**: 분석 데이터를 바탕으로 광고 이미지 생성에 최적화된 프롬프트 자동 작성
+- **타겟 맞춤화**: 타겟 오디언스별 컨셉 제안
+
+**2. 광고 이미지 생성**
+- **Gemini-3-pro-preview 활용**: 제품 전용 광고 및 모델 기반 광고 이미지 생성
+- **제품 전용 광고**: 제품에 집중한 고품질 상업 이미지 생성
+- **모델 기반 광고**: 모델이 제품을 착용/사용하는 컨셉의 광고 이미지 생성
+- **세부 제어**: 조명, 구도, 스타일(미니멀, 럭셔리, 네온 등) 정밀 제어
+
+**3. 이미지 합성 파이프라인**
+- **Pillow 이미지 처리**: 이미지 전처리, 리사이징, 마스킹
+- **자연스러운 블렌딩**: 생성된 배경과 제품 이미지의 경계면 처리 최적화
+
+**4. 웹 애플리케이션**
+- **Flask**: 모던하고 반응형인 웹 인터페이스 구축
+
+**🌟 기술 스택**
 ```
-Audio Input + Image Input → Faster-Whisper → Midm-2.0-Mini-Vision-Instruct → OpenAI TTS → Real-time Voice
+Python, Flask, Gemini-2.5-flash, Gemini-3-pro-preview, Pillow, HTML5, Tailwind CSS
 ```
 
-**🌟 하이라이트**
-- LLaVA 아키텍처 최적화로 2B 경량화 달성
-- CPU/GPU 자동 감지 및 최적 디바이스 할당
-- Apache 2.0 라이선스로 HuggingFace·GitHub 오픈소스 공개
+---
+
+### 🤖 이미지 멀티모달 AI 대화 시스템
+**2025.08 - 2025.11** | [HuggingFace](https://huggingface.co/bigdefence)
+
+> 보고 듣고 말하는 AI: 음성·이미지를 동시 이해하여 실시간 음성으로 응답하는 End-to-End 멀티모달 대화 플랫폼 구현
+
+**🎯 핵심 성과**
+- ✅ **자체 VLM 개발**: 한국어 특화 멀티모달 AI 모델 구축 (HuggingFace 공개)
+- ✅ **경량화**: 2B 경량 모델로 엣지/모바일 디바이스에서도 구동 가능
+
+**🔧 기술적 구현**
+
+**1. 자체 VLM 개발 (SmolVLM)**
+- **SmolLM2-135M-Instruct + MobileCLIP-B** 기반 경량 Vision-Language Model 직접 개발
+- **경량 아키텍처**: 총 0.2B 파라미터로 극도의 경량화 달성 (LLaVA 아키텍처 기반)
+- **비전-언어 정렬**: MobileCLIP 비전 특징을 SmolLM2 임베딩 공간으로 매핑
+
+**2. 추가 VLM 개발 (Midm-Vision)**
+- **Midm-2.0-Mini-Instruct** 기반 2B 파라미터 한국어 특화 VLM 개발
+- Vision Encoder(CLIP) + Vision Projector + LLM 통합 설계
+
+**3. 2단계 학습 전략**
+- **Stage 1 (Pre-training)**: Vision Projector만 학습 (비전-언어 정렬)
+- **Stage 2 (Fine-tuning)**: Projector + LLM LoRA 공동 미세조정
+- **핵심 문제 해결**: Chat Template 마스킹 오류 및 Tokenization Mismatch 해결
+
+**4. LLM-as-a-Judge 평가**
+- **Gemini 2.5 Flash Lite 활용**: 의미론적 품질 평가 (정확성, 완전성, 유창성)
+- **Flickr8k 평가 결과**: 32%가 70점 이상 (Good/Excellent)
+
+**5. 실시간 멀티모달 파이프라인**
+- **Audio + Image → STT → VLM → Streaming TTS → Real-time Voice**
+- WebRTC 기반 저지연 스트리밍 (평균 1.2초 응답)
+
+**🌟 기술 스택**
+```
+Python, PyTorch, SmolLM2, MobileCLIP, LLaVA, LoRA, DeepSpeed, Gemini API, FastAPI, WebRTC, Whisper, OpenAI TTS
+```
 
 ### 🎙️ BigVox - 한국어 음성 멀티모달 AI 시스템
 **2025.03 - 2025.08** | [HuggingFace](https://huggingface.co/bigdefence)
