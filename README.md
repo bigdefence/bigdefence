@@ -81,42 +81,51 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker - 광고 이미지 합성 캔버스
+### 🎨 AI Ad Maker Agent - ReAct 패턴 광고 제작 에이전트
 **2025.11** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
 
-> 이미지를 캔버스에 배치하고, 화살표와 텍스트로 관계를 표시한 후 AI가 캔버스를 분석하여 고품질 광고 이미지를 자동 생성하는 멀티모달 에이전트
+> 캔버스에 이미지를 배치하고 AI 에이전트가 스스로 분석·전략 수립·이미지 생성하는 ReAct 패턴 기반 자율 크리에이티브 디렉터
 
 **🎯 핵심 성과**
-- ✅ **3단계 AI 파이프라인**: 캔버스 분석 → 프롬프트 최적화 → 고품질 이미지 생성
-- ✅ **일관성 유지**: 인물/캐릭터/제품의 얼굴 특징, 디자인, 색상을 원본과 동일하게 보존
-- ✅ **상업용 품질**: 8K급 해상도, 전문 스튜디오 조명, 광고/상업용 품질의 이미지 생성
-- ✅ **직관적 캔버스 UI**: Fabric.js 기반 드래그 앤 드롭, 화살표, 텍스트로 관계 표시
+- ✅ **ReAct 에이전트 워크플로우**: Thinking → Action → Observation → Decision 사이클로 자율적 작업 수행
+- ✅ **사용자 중심 제어**: 이미지 개수 선택(1-4개), 수동 편집 지원
+- ✅ **일관성 유지 편집**: 2단계 분석 프롬프트로 조명·색감·구도·브랜드 정체성 강력 보존
+- ✅ **상업용 품질**: 8K급 해상도, 전문 스튜디오 조명, 광고/상업용 마감
 
 **🔧 기술적 구현**
 
-**1. 인터랙티브 캔버스 (Frontend)**
-- **Fabric.js 6.9**: 드래그 앤 드롭 이미지 업로드, 다중 선택, 크기 조절, 회전
-- **드로잉 도구**: 선택, 이동, 펜, 화살표, 텍스트, 지우개 (키보드 단축키 지원)
+**1. 인터랙티브 캔버스 (React + Fabric.js)**
+- **Fabric.js 6.9**: 드래그 앤 드롭, 다중 이미지 조작, 크기 조절, 회전
+- **드로잉 도구**: 화살표, 텍스트, 펜으로 관계 표시 (키보드 단축키 지원)
 - **React + TypeScript**: 모던 UI/UX, 실시간 상태 관리
 
-**2. 캔버스 분석 (Gemini 2.5 Flash)**
-- **작업 유형 파악**: Face Swap, 스타일 전환, 배경 합성, 포즈 적용, 캐릭터화 자동 식별
-- **요소별 상세 분석**: 인물(얼굴 특징, 헤어), 캐릭터(스타일, 색상), 제품(브랜드, 재질), 배경
-- **관계 해석**: 화살표, 텍스트, 기호가 나타내는 변환 의도 파악
+**2. ReAct 패턴 에이전트 (Python + FastAPI)**
 
-**3. 프롬프트 최적화 (Gemini 2.5 Flash)**
-- **광고 품질 키워드 자동 추가**: "Award-winning commercial photography", "8K resolution", "professional studio lighting"
-- **일관성 지시어 삽입**: "Maintain EXACT facial features", "Same character design", "Identical product appearance"
-- **영문 프롬프트 생성**: 이미지 생성 모델에 최적화된 구체적이고 상세한 영어 프롬프트
+**Agent Workflow:**
+```
+💭 Thinking → 🔧 Action → 👁️ Observation → ✅ Decision
+```
 
-**4. 고품질 이미지 생성 (Gemini 3 Pro Image Preview)**
-- **참조 이미지 기반 생성**: 캔버스 캡처 + 최적화된 프롬프트로 이미지 생성
-- **일관성 보장**: 원본 요소의 identity를 유지하면서 새로운 컨텍스트에 자연스럽게 배치
-- **상업용 마감**: 전문적인 조명, 색감, 합성 품질 보장
+**Agent Tools:**
+- `analyze_canvas`: 캔버스 요소 및 의도 분석 (Gemini 2.5 Flash)
+- `generate_brief`: 타겟 오디언스, 스타일, 컬러 팔레트 결정
+- `generate_image`: 사용자 선택 개수만큼 이미지 생성 (Gemini 3 Pro)
+- `edit_image`: 일관성 유지하며 편집 (2단계 분석 프롬프트)
+
+**3. 일관성 유지 편집 시스템**
+- **STEP 1**: 원본 이미지 특성 분석 (조명, 색감, 구도, 텍스처, DOF)
+- **STEP 2**: 편집 적용 with 5가지 보존 규칙 (조명/색상/구도/품질/브랜드)
+- **결과**: 같은 촬영에서 나온 것처럼 자연스러운 편집
+
+**4. 사용자 제어 중심 설계**
+- 이미지 생성 개수 직접 선택 (1-4개)
+- 생성 완료 후 자동 작업 없음 (사용자 확인 대기)
+- 편집은 "편집" 탭에서 프롬프트 입력 시에만 실행
+- 채팅은 안내용 (자동 이미지 생성 없음)
 
 **🌟 기술 스택**
 ```
-React 18, TypeScript, Fabric.js 6.9, Vite, FastAPI, Python 3.12+, Gemini 2.5 Flash, Gemini 3 Pro Image Preview
+React 18, TypeScript, Fabric.js 6.9, Vite, FastAPI, Python 3.12+, Gemini 2.5 Flash, Gemini 3 Pro
 ```
 
 ---
