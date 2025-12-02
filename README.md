@@ -81,55 +81,38 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker Agent - ReAct 패턴 광고 제작 에이전트
-**2025.11** | 
+### 🎨 AI Ad Maker – Magic Canvas
+**2025.12** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
 
+> 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
 
-https://github.com/user-attachments/assets/26f54444-4b56-411a-b3e5-4b40a4d686e2
+**🎯 핵심 가치**
+- ✅ **객체 단위 추출**: 선택 영역 안의 이미지·화살표·텍스트·프리드로잉을 별도 객체로 분리
+- ✅ **관계 해석 엔진**: 화살표 시작/끝 좌표를 기반으로 “소스 → 타겟” 매핑 (예: 모자 → 인물)
+- ✅ **Gemini 멀티 이미지 입력**: 분리된 모든 이미지를 `types.Part.from_bytes()`로 변환하여 Gemini 2.5 Flash Image에 동시에 전달
+- ✅ **일관성 보존 프롬프트**: 얼굴/로고/재질/조명을 그대로 유지하도록 자동 지시
+- ✅ **경량 UI**: 캔버스 집중형 워크플로
 
-
-> 캔버스에 이미지를 배치하고 AI 에이전트가 스스로 분석·전략 수립·이미지 생성하는 ReAct 패턴 기반 자율 크리에이티브 디렉터
-
-**🎯 핵심 성과**
-- ✅ **ReAct 에이전트 워크플로우**: Thinking → Action → Observation → Decision 사이클로 자율적 작업 수행
-- ✅ **사용자 중심 제어**: 이미지 개수 선택(1-4개), 수동 편집 지원
-- ✅ **일관성 유지 편집**: 2단계 분석 프롬프트로 조명·색감·구도·브랜드 정체성 강력 보존
-- ✅ **상업용 품질**: 4K급 해상도, 전문 스튜디오 조명, 광고/상업용 마감
-
-**🔧 기술적 구현**
-
-**1. 인터랙티브 캔버스 (React + Fabric.js)**
-- **Fabric.js 6.9**: 드래그 앤 드롭, 다중 이미지 조작, 크기 조절, 회전
-- **드로잉 도구**: 화살표, 텍스트, 펜으로 관계 표시 (키보드 단축키 지원)
-- **React + TypeScript**: 모던 UI/UX, 실시간 상태 관리
-
-**2. ReAct 패턴 에이전트 (Python + FastAPI)**
-
-**Agent Workflow:**
+**🔧 시스템 개요**
 ```
-💭 Thinking → 🔧 Action → 👁️ Observation → ✅ Decision
+React + Fabric.js Canvas  ── 객체 리스트(JSON) ──▶ FastAPI 서버 ──▶ Gemini 2.5 Flash Image
+          ▲                         │                               │
+          └──────── 생성 결과 (base64) ◀──────────────────────────────┘
 ```
+1. 사용자가 캔버스에 이미지·화살표·텍스트를 배치하고 영역을 선택
+2. 프론트엔드가 영역 내 객체를 추출하여 서버에 전달
+3. 서버는 화살표 관계를 분석해 “소스 → 타겟” 명령을 프롬프트에 포함
+4. Gemini에 멀티 이미지 입력으로 합성 요청 후 결과를 다시 캔버스에 배치
 
-**Agent Tools:**
-- `analyze_canvas`: 캔버스 요소 및 의도 분석 (Gemini 2.5 Flash)
-- `generate_brief`: 타겟 오디언스, 스타일, 컬러 팔레트 결정
-- `generate_image`: 사용자 선택 개수만큼 이미지 생성 (Gemini 3 Pro)
-- `edit_image`: 일관성 유지하며 편집 (2단계 분석 프롬프트)
+**🧩 API 하이라이트**
+- `POST /api/generate`: 전체 캔버스 캡처 기반 빠른 합성 (폴백)
+- `POST /api/generate-from-objects`: 이미지·화살표·텍스트 객체 기반 고품질 합성 (권장)
 
-**3. 일관성 유지 편집 시스템**
-- **STEP 1**: 원본 이미지 특성 분석 (조명, 색감, 구도, 텍스처, DOF)
-- **STEP 2**: 편집 적용 with 5가지 보존 규칙 (조명/색상/구도/품질/브랜드)
-- **결과**: 같은 촬영에서 나온 것처럼 자연스러운 편집
-
-**4. 사용자 제어 중심 설계**
-- 이미지 생성 개수 직접 선택 (1-4개)
-- 생성 완료 후 자동 작업 없음 (사용자 확인 대기)
-- 편집은 "편집" 탭에서 프롬프트 입력 시에만 실행
-- 채팅은 안내용 (자동 이미지 생성 없음)
-
-**🌟 기술 스택**
+**🛠️ 기술 스택**
 ```
-React 18, TypeScript, Fabric.js 6.9, Vite, FastAPI, Python 3.12+, Gemini 2.5 Flash, Gemini 3 Pro
+Frontend  : React 18, TypeScript, Vite, Fabric.js, Axios
+Backend   : Python 3.12, FastAPI, Pillow, google-genai SDK
+AI Models : Gemini 2.5 Flash Image (멀티 이미지 입력, 고일관성 프롬프트)
 ```
 
 ---
