@@ -84,13 +84,17 @@
 ### 🎨 AI Ad Maker Agent - ReAct 패턴 광고 제작 에이전트
 **2025.11** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
 
+
+https://github.com/user-attachments/assets/26f54444-4b56-411a-b3e5-4b40a4d686e2
+
+
 > 캔버스에 이미지를 배치하고 AI 에이전트가 스스로 분석·전략 수립·이미지 생성하는 ReAct 패턴 기반 자율 크리에이티브 디렉터
 
 **🎯 핵심 성과**
 - ✅ **ReAct 에이전트 워크플로우**: Thinking → Action → Observation → Decision 사이클로 자율적 작업 수행
 - ✅ **사용자 중심 제어**: 이미지 개수 선택(1-4개), 수동 편집 지원
 - ✅ **일관성 유지 편집**: 2단계 분석 프롬프트로 조명·색감·구도·브랜드 정체성 강력 보존
-- ✅ **상업용 품질**: 8K급 해상도, 전문 스튜디오 조명, 광고/상업용 마감
+- ✅ **상업용 품질**: 4K급 해상도, 전문 스튜디오 조명, 광고/상업용 마감
 
 **🔧 기술적 구현**
 
