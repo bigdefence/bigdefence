@@ -82,7 +82,7 @@
 ## 🏆 Featured Projects
 
 ### 🎨 AI Ad Maker Agent - ReAct 패턴 광고 제작 에이전트
-**2025.11** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
+**2025.11** | 
 
 
 https://github.com/user-attachments/assets/26f54444-4b56-411a-b3e5-4b40a4d686e2
