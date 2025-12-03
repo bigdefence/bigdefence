@@ -81,8 +81,8 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker – Magic Canvas (v4.2)
-**2025.12** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
+### 🎨 AI Ad Maker – Magic Canvas 
+**2025.12** |
 
 > 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
 
