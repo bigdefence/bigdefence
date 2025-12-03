@@ -81,44 +81,48 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker – Magic Canvas Agent
-**2025.12** | 
+### 🎨 AI Ad Maker – Magic Canvas (v4.2)
+**2025.12** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
 
-> 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
-
-
-
-https://github.com/user-attachments/assets/8be6354c-f7b9-4132-b3a6-c63360eecd1e
-
-
+> 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
 
 **🎯 핵심 가치**
 - ✅ **객체 단위 추출**: 선택 영역 안의 이미지·화살표·텍스트·프리드로잉을 별도 객체로 분리
-- ✅ **관계 해석 엔진**: 화살표 시작/끝 좌표를 기반으로 “소스 → 타겟” 매핑 (예: 모자 → 인물)
-- ✅ **Gemini 멀티 이미지 입력**: 분리된 모든 이미지를 `types.Part.from_bytes()`로 변환하여 Gemini 2.5 Flash Image에 동시에 전달
+- ✅ **관계 해석 엔진**: 화살표 시작/끝 좌표를 기반으로 "소스 → 타겟" 매핑 (예: 모자 → 인물)
+- ✅ **🆕 드로잉 형태 인식**: 원형/사각형/화살표/곡선/자유형 드로잉을 자동 분류 및 의도 해석
+- ✅ **🆕 캔버스 스냅샷**: 드로잉 포함 전체 캔버스를 시각적 참조 이미지로 AI에 전달
+- ✅ **Gemini 멀티 이미지 입력**: 분리된 모든 이미지 + 스냅샷을 `types.Part.from_bytes()`로 변환하여 Gemini 2.5 Flash Image에 동시 전달
 - ✅ **일관성 보존 프롬프트**: 얼굴/로고/재질/조명을 그대로 유지하도록 자동 지시
+- ✅ **🆕 정밀 좌표 지원**: 줌/팬 상태에서도 텍스트·화살표가 마우스 위치에 정확히 생성
 - ✅ **경량 UI**: 캔버스 집중형 워크플로
 
 **🔧 시스템 개요**
 ```
-React + Fabric.js Canvas  ── 객체 리스트(JSON) ──▶ FastAPI 서버 ──▶ Gemini 2.5 Flash Image
-          ▲                         │                               │
-          └──────── 생성 결과 (base64) ◀──────────────────────────────┘
+React + Fabric.js Canvas  ── 객체 + 스냅샷(JSON) ──▶ FastAPI 서버 ──▶ Gemini 2.5 Flash Image
+          ▲                              │                                   │
+          └───────── 생성 결과 (base64) ◀─────────────────────────────────────┘
 ```
-1. 사용자가 캔버스에 이미지·화살표·텍스트를 배치하고 영역을 선택
-2. 프론트엔드가 영역 내 객체를 추출하여 서버에 전달
-3. 서버는 화살표 관계를 분석해 “소스 → 타겟” 명령을 프롬프트에 포함
-4. Gemini에 멀티 이미지 입력으로 합성 요청 후 결과를 다시 캔버스에 배치
+1. 사용자가 캔버스에 이미지·화살표·텍스트·드로잉을 배치하고 영역을 선택
+2. 프론트엔드가 영역 내 객체를 추출 + 드로잉 형태 분석 + 캔버스 스냅샷 캡처
+3. 서버는 화살표/드로잉 관계를 분석해 "소스 → 타겟" 명령과 드로잉 해석 가이드를 프롬프트에 포함
+4. Gemini에 멀티 이미지 + 스냅샷 입력으로 합성 요청 후 결과를 다시 캔버스에 배치
+
+**🆕 드로잉 해석 가이드**
+```
+원형 = 영역 강조/선택    |  화살표 = 관계/이동 방향
+사각형 = 프레임/영역     |  X표시 = 요소 제거
+곡선 = 흐름/변형 표현    |  자유드로잉 = 스케치/수정 의도
+```
 
 **🧩 API 하이라이트**
 - `POST /api/generate`: 전체 캔버스 캡처 기반 빠른 합성 (폴백)
-- `POST /api/generate-from-objects`: 이미지·화살표·텍스트 객체 기반 고품질 합성 (권장)
+- `POST /api/generate-from-objects`: 이미지·화살표·텍스트·드로잉·스냅샷 기반 고품질 합성 (권장)
 
 **🛠️ 기술 스택**
 ```
 Frontend  : React 18, TypeScript, Vite, Fabric.js, Axios
-Backend   : Python 3.12, FastAPI, Pillow, Gemini
-AI Models : Gemini 2.5 Flash Image (멀티 이미지 입력, 고일관성 프롬프트)
+Backend   : Python 3.12, FastAPI, Pillow, google-genai SDK
+AI Models : Gemini 2.5 Flash Image (멀티 이미지 입력, 드로잉 해석, 고일관성 프롬프트)
 ```
 
 ---
