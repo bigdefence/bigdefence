@@ -81,10 +81,14 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker – Magic Canvas 
+### 🎨 AI Ad Maker – Magic Canvas Agent
 **2025.12** |
 
 > 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
+
+
+https://github.com/user-attachments/assets/ff0872dd-98ac-41be-b70a-fe0e60702956
+
 
 **🎯 핵심 가치**
 - ✅ **객체 단위 추출**: 선택 영역 안의 이미지·화살표·텍스트·프리드로잉을 별도 객체로 분리
