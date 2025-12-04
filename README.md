@@ -81,21 +81,20 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker – Magic Canvas Agent
-**2025.12** |
+### 🎨 AI Ad Maker – Magic Canvas Agent (v4.2)
+**2025.12** | [GitHub](https://github.com/bigdefence/ad-maker-agent)
+
+
+https://github.com/user-attachments/assets/747508a7-870d-4ca3-a9a6-54d46069f7bf
+
 
 > 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
-
-
-https://github.com/user-attachments/assets/02c31c0f-3ed8-4a5d-a7ac-75fd7b3b68bf
-
 
 **🎯 핵심 가치**
 - ✅ **객체 단위 추출**: 선택 영역 안의 이미지·화살표·텍스트·프리드로잉을 별도 객체로 분리
 - ✅ **관계 해석 엔진**: 화살표 시작/끝 좌표를 기반으로 "소스 → 타겟" 매핑 (예: 모자 → 인물)
 - ✅ **🆕 시각적 의도 파악 (Visual Intent Analysis)**: Gemini 2.5 Flash(Multimodal)가 캔버스 스냅샷을 보고 드로잉(원형=강조, 화살표=적용)의 의미를 스스로 해석
 - ✅ **🆕 글로벌 일관성 (Global Consistency)**: "주 피사체 정체성 유지" 지침을 강제하여 얼굴/로고/디테일 보존
-- ✅ **Gemini 멀티 이미지 입력**: 분리된 모든 이미지 + 스냅샷을 `types.Part.from_bytes()`로 변환하여 Gemini 2.5 Flash Image에 동시 전달
 - ✅ **프롬프트 최적화**: 사용자의 시각적 의도를 바탕으로 고품질 프롬프트 자동 생성
 - ✅ **정밀 좌표 지원**: 줌/팬 상태에서도 텍스트·화살표가 마우스 위치에 정확히 생성
 - ✅ **경량 UI**: 캔버스 집중형 워크플로우
@@ -106,12 +105,12 @@ React + Fabric.js Canvas  ── 객체 + 스냅샷(JSON) ──▶ FastAPI 서�
           ▲                              │                                   │
           │                              │                          프롬프트 최적화
           │                              │                                   ▼
-          └───────── 생성 결과 (base64) ◀───────────────────── Gemini 3 Pro Image (Generation)
+          └───────── 생성 결과 (base64) ◀───────────────────── Nano Banana (Generation)
 ```
 1. 사용자가 캔버스에 이미지·화살표·텍스트·드로잉을 배치하고 영역을 선택
 2. 프론트엔드가 영역 내 객체를 추출 + 드로잉 형태 분석 + 캔버스 스냅샷 캡처
 3. **Gemini 2.5 Flash**가 캔버스 스냅샷을 보고 "빨간 원은 셔츠 강조, 화살표는 패턴 적용"과 같이 의도 해석
-4. 해석된 의도를 바탕으로 **Gemini 3 Pro**가 고품질 이미지 생성
+4. 해석된 의도를 바탕으로 **Nano Banana**가 고품질 이미지 생성
 
 **🧩 API 하이라이트**
 - `POST /api/generate`: 전체 캔버스 캡처 기반 빠른 합성 (폴백)
@@ -121,7 +120,7 @@ React + Fabric.js Canvas  ── 객체 + 스냅샷(JSON) ──▶ FastAPI 서�
 ```
 Frontend  : React 18, TypeScript, Vite, Fabric.js, Axios
 Backend   : Python 3.12, FastAPI, Pillow, google-genai SDK
-AI Models : Gemini 2.5 Flash (Visual Analysis), Gemini 3 Pro Image (High-Fidelity Generation)
+AI Models : Gemini 2.5 Flash (Visual Analysis), Nano Banana (High-Fidelity Generation)
 ```
 
 ---
