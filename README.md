@@ -84,6 +84,10 @@
 ### 🎨 AI Ad Maker – Magic Canvas Agent
 **2025.12** |
 
+
+https://github.com/user-attachments/assets/025c7ef2-18aa-4055-9f57-3089fcc0156b
+
+
 > 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 Gemini가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 Magic Canvas 툴
 
 **🎯 핵심 가치**
