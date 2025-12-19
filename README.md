@@ -85,10 +85,15 @@
 **2025.12** |
 
 
-https://github.com/user-attachments/assets/025c7ef2-18aa-4055-9f57-3089fcc0156b
+
+https://github.com/user-attachments/assets/d12eb992-dea4-4354-a478-dc4882394685
 
 
-https://github.com/user-attachments/assets/41074899-b29b-4858-acc9-761001de725c
+
+
+https://github.com/user-attachments/assets/b1fad0bf-048a-4752-84ec-2a624717f174
+
+
 
 
 
