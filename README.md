@@ -81,8 +81,8 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 AI Ad Maker – Magic Canvas Agent
-**2025.12** |
+### 🎨 Magic Canvas: AI-Powered Ad Creative Agent
+**2025.11 - 2025.12** |
 
 
 
