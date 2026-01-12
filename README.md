@@ -82,7 +82,7 @@
 ## 🏆 Featured Projects
 
 ### 🎨 Magic Canvas: AI-Powered Ad Creative Agent
-**2025.11 - 2025.12** |
+**2025.11 - 2025.12** | [Magic Canvas](https://magiccanvas.vercel.app/)
 
 
 
