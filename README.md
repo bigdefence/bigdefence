@@ -109,7 +109,7 @@
 **🛠️ 기술 스택**
 - **Frontend**: React 18, TypeScript, Vite, Fabric.js (Canvas API), Framer Motion, Zustand
 - **Backend**: Python 3.12, FastAPI, 비동기 파이프라인(`asyncio`, `run_in_threadpool`), Pillow
-- **AI Models**: Gemini 3 Flash/Pro, Grok, Kling, FAL API, Replicate
+- **AI Models**: Gemini 3 Flash/Pro, Grok, Kling, Seedream, OpenAI
 - **Infra/Base**: Supabase (PostgreSQL, Storage, Auth), Google Cloud Run (서버리스 배포)
 
 ---
