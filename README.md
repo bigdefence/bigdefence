@@ -81,76 +81,49 @@
 
 ## 🏆 Featured Projects
 
-### 🎨 Magic Canvas: AI-Powered Ad Creative Agent
-**2025.11 -** | [Magic Canvas](https://magiccanvas.vercel.app/)
+### 🎨 Magic Canvas: AI 기반 컨텍스트 인식 디자인 에이전트
+**2025.11 - 현재** | [Magic Canvas](https://magiccanvas.co.kr/)
 
+[![Magic Canvas Demo](https://img.youtube.com/vi/5pb4txbwxJ8/maxresdefault.jpg)](https://youtu.be/5pb4txbwxJ8)
 
+> 캔버스 위에서 이미지, 텍스트, 화살표, 드로잉을 조합하면 AI가 시각적 의도를 파악하여 고품질 광고 소재(이미지/영상)를 자동 생성하는 **차세대 멀티모달 프롬프트리스 디자인 툴**입니다.
 
+**🎯 핵심 기능 및 특장점**
+- ✅ **시각적 의도 해석 (Visual Intent Analysis)**: Gemini 3 Flash를 활용해 캔버스 스냅샷과 사용자 드로잉(화살표, 여백 등)의 문맥을 복합적으로 해석
+- ✅ **객체 단위 관계 매핑**: 화면 내 요소들의 공간적 관계와 화살표의 소스-타겟 흐름을 분석하여 가장 이상적인 생성 프롬프트 자동 도출
+- ✅ **5대 특화 AI 생성 도구 통합**:
+  - **스마트 배경 생성**: 피사체 윤곽, 조명, 톤앤매너에 맞춘 고품질 배경 합성
+  - **AI 배경 제거 (누끼)**: 깔끔하고 정밀한 외곽선 제거 기능
+  - **광고 배너 팩토리**: 인스타그램, 페이스북, 웹 배너 등 주요 규격에 맞게 텍스트와 레이아웃을 변형하여 일괄 생성
+  - **상세페이지 자동 섹션화**: 단일 제품 이미지에서 제품 특징을 파악하여 커머스 상세페이지 기획안 및 섹션 이미지 렌더링
+  - **목업 텍스트 리터칭**: OCR 기반으로 이미지 내 기존 텍스트를 파악하고 자연스럽게 지운 뒤 원하는 내용으로 재작성 (Inpainting)
+- ✅ **다이내믹 멀티 모델 파이프라인**: 작업 목적에 맞춰 Gemini 3 Pro, Grok, Kling, FAL, Replicate 등 최적의 모델 앙상블 적용
+- ✅ **채팅형 코파일럿**: 사이드바 대화창을 통해 에셋 검색, 배경 합성, 캔버스 편집 명령을 자유롭게 주고받는 UX 구현
 
-https://github.com/user-attachments/assets/d563e508-788d-46f0-8362-156172b6964f
-
-
-
-https://github.com/user-attachments/assets/b08e258d-cadf-4f68-b0a0-82a7800d5a25
-
-
-
-
-
-https://github.com/user-attachments/assets/d7bbbe1f-38f7-4cbd-bea2-7cf431657bb6
-
-
-
-
-
-> 드래그 앤 드롭으로 이미지를 배치하고, 화살표/텍스트/드로잉으로 의도를 그려 넣으면 AI가 자연스럽고 일관성 있는 합성 컷을 생성하는 프롬프트리스 광고 크리에이티브 툴 (이미지·영상 통합)
-
-**🎯 핵심 가치**
-- ✅ **객체 단위 추출**: 선택 영역 안의 이미지·화살표·텍스트·프리드로잉을 별도 객체로 분리
-- ✅ **관계 해석 엔진**: 화살표 시작/끝 좌표를 기반으로 "소스 → 타겟" 매핑 (예: 모자 → 인물)
-- ✅ **시각적 의도 파악 (Visual Intent Analysis)**: Gemini 3 Flash가 캔버스 스냅샷을 보고 드로잉 의미를 해석
-- ✅ **글로벌 일관성 (Global Consistency)**: "주 피사체 정체성 유지" 지침으로 얼굴/로고/디테일 보존
-- ✅ **프롬프트 최적화**: 시각적 의도 기반 고품질 프롬프트 자동 생성
-- ✅ **다중 이미지 모델**: Nano Banana(Pro), Grok Imagine, GPT Image 1.5, Seedream 4.5, Qwen Edit 등 선택
-- ✅ **AI 영상 생성**: 이미지 분석 → Veo 3.1 / Veo 3.1 Fast, Grok Video, Sora 2, Kling, Seedance 등 8초 단위 광고 영상
-- ✅ **채팅 생성**: 대화형 이미지 생성·편집 (chat-generate)
-- ✅ **인페인팅**: 마스크 영역 기반 정밀 편집 (inpaint)
-- ✅ **인프라**: Supabase(인증·스토리지), Creem(결제·크레딧), 경량 캔버스 중심 UI
-
-**🔧 시스템 개요**
+**🔧 시스템 아키텍처**
+```text
+React + Fabric.js + Framer Motion  ── 캔버스 스냅샷 & 객체 메타데이터 ──▶ FastAPI ──▶ Gemini 3 Flash (의도 분석)
+          ▲                                    │                            │
+          │                                    │                            ▼
+          │                                    │                프롬프트 도출 및 파라미터 최적화
+          │                                    │                            │
+          │                                    │         ┌──────────────────┼──────────────────┐
+          └──────── 생성 결과 (Supabase) ◀─────┼──────── Gemini          FAL API          Replicate API
+                                               │        (이미지)     (상업용 이미지/Grok)  (인페인팅/특수편집)
+                                               └──────── /api/tools 라우터 (5대 특화 AI 기능 분기)
 ```
-React + Fabric.js + Framer Motion  ── 객체 + 스냅샷(JSON) ──▶ FastAPI ──▶ Gemini 3 Flash (의도 분석)
-          ▲                                    │                        │
-          │                                    │                        ▼
-          │                                    │               프롬프트 최적화
-          │                                    │                        │
-          │                                    │         ┌──────────────┼──────────────┐
-          └──────── 생성 결과 (Supabase) ◀─────┼──────── Gemini      Replicate      FAL
-                                               │        (이미지)      (이미지/영상)   (Veo·영상)
-                                               └──────── /api/chat-generate (채팅 생성)
-```
-1. 사용자가 캔버스에 이미지·화살표·텍스트·드로잉을 배치하고 영역을 선택
-2. 프론트엔드가 영역 내 객체 추출 + 드로잉 분석 + 캔버스 스냅샷 캡처
-3. **Gemini 3 Flash**가 캔버스 스냅샷을 보고 의도 해석 후 프롬프트 최적화
-4. 선택한 모델(Gemini Nano Banana·Grok·GPT Image·Seedream·Qwen 등)로 이미지 생성 또는 Veo/Sora/Kling 등으로 영상 생성
 
-**🧩 API 하이라이트**
-- `POST /api/generate`: 캔버스 캡처 기반 이미지 생성 (폴백)
-- `POST /api/generate-from-objects`: 이미지·화살표·텍스트·드로잉·스냅샷 기반 고품질 합성 (권장)
-- `POST /api/generate-video`: 이미지 분석 후 Veo 3.1 / Grok Video / Sora 2 등 광고 영상 생성
-- `POST /api/chat-generate`: 채팅 기반 이미지 생성·편집
-- `POST /api/inpaint`: 마스크 영역 인페인팅
-- `GET /api/images`, `GET /api/videos`: 생성 결과 목록 (source=magic-canvas)
+**🧩 주요 API 및 엔드포인트**
+- `POST /api/generate-from-objects`: 객체 구조와 캔버스 스냅샷을 병합 해석하는 메인 생성 모듈
+- `POST /api/tools/generate-ad-banner`: 다중 해상도 배너 병렬 생성 처리 로직
+- `POST /api/tools/mockup-reposition`: 추출된 텍스트 블록의 인페인팅 및 스타일 일치 재배치
+- `POST /api/chat-generate`: 멀티모달 채팅의 사용자 명령 파싱 및 에이전트 액션 통합 처리
 
 **🛠️ 기술 스택**
-```
-Frontend  : React 18, TypeScript, Vite, Fabric.js, Framer Motion, Axios
-Backend   : Python 3.12, FastAPI, Pillow, google-genai SDK
-Data/Auth : Supabase (스토리지·인증)
-Payments  : Creem (크레딧·결제)
-AI        : Gemini 3 Flash (의도 분석), Gemini Nano Banana/Pro·Grok·GPT Image·Seedream·Qwen (이미지),
-            Veo 3.1 / Veo 3.1 Fast·Grok Video·Sora 2·Kling·Seedance (영상) — Replicate·FAL 연동
-```
+- **Frontend**: React 18, TypeScript, Vite, Fabric.js (Canvas API), Framer Motion, Zustand
+- **Backend**: Python 3.12, FastAPI, 비동기 파이프라인(`asyncio`, `run_in_threadpool`), Pillow
+- **AI Models**: Gemini 3 Flash/Pro, Grok, Kling, FAL API, Replicate
+- **Infra/Base**: Supabase (PostgreSQL, Storage, Auth), Google Cloud Run (서버리스 배포)
 
 ---
 
