@@ -100,12 +100,6 @@
 - ✅ **다이내믹 멀티 모델 파이프라인**: 작업 목적에 맞춰 Nano banana, Grok, Kling, Seedream 등 최적의 모델 앙상블 적용
 - ✅ **채팅형 UX**: 사이드바 대화창을 통해 에셋 검색, 배경 합성, 캔버스 편집 명령을 자유롭게 주고받는 UX 구현
 
-**🧩 주요 API 및 엔드포인트**
-- `POST /api/generate-from-objects`: 객체 구조와 캔버스 스냅샷을 병합 해석하는 메인 생성 모듈
-- `POST /api/tools/generate-ad-banner`: 다중 해상도 배너 병렬 생성 처리 로직
-- `POST /api/tools/mockup-reposition`: 추출된 텍스트 블록의 인페인팅 및 스타일 일치 재배치
-- `POST /api/chat-generate`: 멀티모달 채팅의 사용자 명령 파싱 및 에이전트 액션 통합 처리
-
 **🛠️ 기술 스택**
 - **Frontend**: React 18, TypeScript, Vite, Fabric.js (Canvas API), Framer Motion, Zustand
 - **Backend**: Python 3.12, FastAPI, 비동기 파이프라인(`asyncio`, `run_in_threadpool`), Pillow
