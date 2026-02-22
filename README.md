@@ -100,19 +100,6 @@
 - ✅ **다이내믹 멀티 모델 파이프라인**: 작업 목적에 맞춰 Gemini 3 Pro, Grok, Kling, FAL, Replicate 등 최적의 모델 앙상블 적용
 - ✅ **채팅형 코파일럿**: 사이드바 대화창을 통해 에셋 검색, 배경 합성, 캔버스 편집 명령을 자유롭게 주고받는 UX 구현
 
-**🔧 시스템 아키텍처**
-```text
-React + Fabric.js + Framer Motion  ── 캔버스 스냅샷 & 객체 메타데이터 ──▶ FastAPI ──▶ Gemini 3 Flash (의도 분석)
-          ▲                                    │                            │
-          │                                    │                            ▼
-          │                                    │                프롬프트 도출 및 파라미터 최적화
-          │                                    │                            │
-          │                                    │         ┌──────────────────┼──────────────────┐
-          └──────── 생성 결과 (Supabase) ◀─────┼──────── Gemini          FAL API          Replicate API
-                                               │        (이미지)     (상업용 이미지/Grok)  (인페인팅/특수편집)
-                                               └──────── /api/tools 라우터 (5대 특화 AI 기능 분기)
-```
-
 **🧩 주요 API 및 엔드포인트**
 - `POST /api/generate-from-objects`: 객체 구조와 캔버스 스냅샷을 병합 해석하는 메인 생성 모듈
 - `POST /api/tools/generate-ad-banner`: 다중 해상도 배너 병렬 생성 처리 로직
