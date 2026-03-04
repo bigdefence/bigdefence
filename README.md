@@ -72,7 +72,7 @@
 |:---:|:---:|
 | **🏆 수상** | 최우수상 🥇, 우수상 🥈 × 2 |
 | **📦 오픈소스** | HuggingFace 1,500+ 다운로드 |
-| **💡 프로젝트** | 20+ AI 프로젝트 개발·배포 |
+| **💡 프로젝트** | 21+ AI 프로젝트 개발·배포 |
 | **🔬 모델 개발** | VLM·Audio LLM 자체 개발 |
 
 </div>
@@ -80,6 +80,42 @@
 ---
 
 ## 🏆 Featured Projects
+
+### 📈 Stock Council — 4-에이전트 실시간 주식 인사이트 AI
+**2026.03 - 현재** | [GitHub](https://github.com/bigdefence/agent-chat)
+
+
+https://github.com/user-attachments/assets/eeeb39e2-e523-4e34-acc7-69937b8d0b84
+
+
+> 실시간 웹 검색 데이터를 기반으로 4명의 전문 AI 에이전트가 토론·분석하여 종합 투자 인사이트를 제공하는 **멀티 에이전트 주식 분석 챗봇**
+
+**🤖 Council of Four 에이전트**
+| 에이전트 | 역할 | 전문 영역 |
+|:---:|:---|:---|
+| 📰 **Lyra** | 시장 심리·미디어 분석가 | 뉴스 센티먼트, Fear & Greed, 내러티브 흐름 |
+| 📊 **Orion** | 퀀트·기술적 분석가 | 차트 지표, 수급, 섹터 로테이션, 펀더멘털 |
+| ⚠️ **Nemesis** | 리스크·역발상 분석가 | 매크로 리스크, 블랙스완, 헤지 전략 |
+| 🎯 **Apex** | 수석 투자 전략가 | 최종 포지션 권고 (매수/매도/관망) |
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **실시간 Agentic Research**: Tavily 검색 API로 최신 뉴스·데이터 수집 → 멀티쿼리 병렬 검색 → 자동 품질 판단 후 추가 검색 반복
+- ✅ **동적 에이전트 오케스트레이션**: Apex가 매 라운드마다 최적의 다음 발언자와 분석 지시사항을 결정 (Lyra → Nemesis → Orion 크로스체크)
+- ✅ **SSE 스트리밍 UI**: 검색 진행 상황·에이전트 토론·최종 인사이트를 실시간으로 스트리밍
+- ✅ **3D 시각화**: React Three Fiber 기반 에이전트 오브가 발언 상태에 따라 애니메이션
+- ✅ **투자 포지션 권고**: 매크로 → 섹터 → 종목 위계로 분석 후 매수 검토/관망/매도 검토 명확 제시
+
+**🔧 기술적 구현**
+- **멀티 에이전트 Loop**: Apex 판단 → 에이전트 발언 → `[RESOLUTION_REACHED]` 감지 → 최종 합성 자동화
+- **Agentic Search**: Gemini로 검색 쿼리 최적화 → Tavily 병렬 실행 → 자동 충분성 판단 → Follow-up 검색 반복 (최대 3회)
+- **금융 특화 쿼리**: 주가 실시간, 섹터, 매크로(금리/환율), 지정학 리스크 쿼리 자동 생성
+
+**🛠️ 기술 스택**
+- **Frontend**: React 18, TypeScript, Vite, React Three Fiber (3D), ReactMarkdown, Lucide
+- **Backend**: Python, FastAPI, Google Gemini API, Tavily Search API, SSE Streaming
+- **AI**: Gemini 3.1 Flash Lite (다중 에이전트), Google Search Grounding
+
+---
 
 ### 🎨 Magic Canvas: AI 기반 컨텍스트 인식 디자인 에이전트
 **2025.11 - 현재** | [Magic Canvas](https://magiccanvas.co.kr/)
