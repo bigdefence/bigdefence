@@ -82,10 +82,13 @@
 ## 🏆 Featured Projects
 
 ### 📈 Stock Council — 4-에이전트 실시간 주식 인사이트 AI
-**2026.03 - 현재** | [GitHub](https://github.com/bigdefence/agent-chat)
+**2026.03 - 현재** | 
 
 
-https://github.com/user-attachments/assets/eeeb39e2-e523-4e34-acc7-69937b8d0b84
+
+
+https://github.com/user-attachments/assets/7b957a62-22d5-45f0-ba28-c56abde8cd1b
+
 
 
 > 실시간 웹 검색 데이터를 기반으로 4명의 전문 AI 에이전트가 토론·분석하여 종합 투자 인사이트를 제공하는 **멀티 에이전트 주식 분석 챗봇**
