@@ -81,45 +81,34 @@
 
 ## 🏆 Featured Projects
 
-### 📈 Stock Council — 4-에이전트 실시간 주식 인사이트 AI
-**2026.03 - 현재** | 
+### 📈 Stock Council — AI 멀티에이전트 주식 토론 분석 플랫폼
+**2026.03 - 현재** | [Demo](https://stock-council.vercel.app/)
 
+[![Stock Council Demo](https://img.youtube.com/vi/SylGTfYNrNQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=SylGTfYNrNQ)
 
-
-
-
-https://github.com/user-attachments/assets/0acdbc80-961d-4842-9b78-300da0a08e7c
-
-
-
-
-
-> 실시간 웹 검색 데이터를 기반으로 4명의 전문 AI 에이전트가 토론·분석하여 종합 투자 인사이트를 제공하는 **멀티 에이전트 주식 분석 챗봇**
+> 실시간 웹 검색 데이터를 기반으로 4명의 전문 AI 에이전트가 토론·분석하여 종합 투자 인사이트를 제공하는 **멀티 에이전트 주식 토론 플랫폼**
 
 **🤖 Council of Four 에이전트**
 | 에이전트 | 역할 | 전문 영역 |
 |:---:|:---|:---|
 | 📰 **Lyra** | 시장 심리·미디어 분석가 | 뉴스 센티먼트, Fear & Greed, 내러티브 흐름 |
 | 📊 **Orion** | 퀀트·기술적 분석가 | 차트 지표, 수급, 섹터 로테이션, 펀더멘털 |
-| ⚠️ **Nemesis** | 리스크·역발상 분석가 | 매크로 리스크, 블랙스완, 헤지 전략 |
+| ⚠️ **Nemesis** | 리스크·역발상 분석가 | 매크로 리스크, 블랙스완, 백테스팅 리스크 매핑 |
 | 🎯 **Apex** | 수석 투자 전략가 | 최종 포지션 권고 (매수/매도/관망) |
 
 **🎯 핵심 기능 및 특장점**
-- ✅ **실시간 Agentic Research**: Tavily 검색 API로 최신 뉴스·데이터 수집 → 멀티쿼리 병렬 검색 → 자동 품질 판단 후 추가 검색 반복
-- ✅ **동적 에이전트 오케스트레이션**: Apex가 매 라운드마다 최적의 다음 발언자와 분석 지시사항을 결정 (Lyra → Nemesis → Orion 크로스체크)
-- ✅ **SSE 스트리밍 UI**: 검색 진행 상황·에이전트 토론·최종 인사이트를 실시간으로 스트리밍
-- ✅ **3D 시각화**: React Three Fiber 기반 에이전트 오브가 발언 상태에 따라 애니메이션
-- ✅ **투자 포지션 권고**: 매크로 → 섹터 → 종목 위계로 분석 후 매수 검토/관망/매도 검토 명확 제시
+- ✅ **LLM 의도 파악 & 4-Agent 토론**: Rule-based를 탈피한 범용 LLM Intent 파악 처리 및 4 에이전트 다각도 토론
+- ✅ **선제적 AI 능동 모드 (Proactive Mode)**: 사용자의 단편적 질문에도 AI가 스스로 심층 후속 분석 방향을 제안하고 자율 분석(Deep Dive) 수행
+- ✅ **다중 쿼리 동적 검색 시스템**: 뉴스, 리스크, 시세 등 쿼리를 동시 자동 생성 및 출처(Citation) 인용으로 신뢰성 대폭 향상
+- ✅ **시각적 에이전트 애니메이션**: 상태(대기/탐색/분석 등)에 따라 실시간 반응하는 픽셀 아트 애니메이션(Pixel Agent)을 제공해 작업 시각화
+- ✅ **프리미엄 UI & 실시간 렌더링**: Glassmorphism 기반 UI 고도화, FastAPI SSE를 통한 저지연 초고속 스트리밍 UX
+- ✅ **백테스팅 리스크 매핑**: yfinance 데이터 기반 수익률·MDD 시각화 및 시장 하락 시나리오 정량화 제공
 
-**🔧 기술적 구현**
-- **멀티 에이전트 Loop**: Apex 판단 → 에이전트 발언 → `[RESOLUTION_REACHED]` 감지 → 최종 합성 자동화
-- **Agentic Search**: Gemini로 검색 쿼리 최적화 → Tavily 병렬 실행 → 자동 충분성 판단 → Follow-up 검색 반복 (최대 3회)
-- **금융 특화 쿼리**: 주가 실시간, 섹터, 매크로(금리/환율), 지정학 리스크 쿼리 자동 생성
-
-**🛠️ 기술 스택**
-- **Frontend**: React 18, TypeScript, Vite, React Three Fiber (3D), ReactMarkdown, Lucide
-- **Backend**: Python, FastAPI, Google Gemini API, Tavily Search API, SSE Streaming
-- **AI**: Gemini 3.1 Flash Lite (다중 에이전트), Google Search Grounding
+**🔧 기술적 구현 및 시스템 아키텍처**
+- **기능 모듈화 (Modularity)**: 유지보수와 기능 확장을 위해 책임을 명확히 분리한 백엔드 구조 최적화 리팩토링
+- **AI / Data Pipeline**: Gemini API (Intent & Generation), Tavily (Search), yfinance (Market Data)
+- **Frontend / Backend**: React 18, TypeScript, Vite, Supabase / FastAPI, SSE Network Tuning
+- **Deployment**: Vercel (Frontend), Docker 컨테이너 배포 (Backend)
 
 ---
 
