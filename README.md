@@ -81,8 +81,8 @@
 
 ## 🏆 Featured Projects
 
-### 📈 Stock Council — AI 멀티에이전트 주식 토론 분석 플랫폼
-**2026.03 - 현재** | [Demo](https://stock-council.vercel.app/)
+### 📈 주식의 방 — AI 멀티에이전트 주식 토론 분석 플랫폼
+**2026.03 - 현재** | [Demo](https://stockrooms.site/)
 
 [![Stock Council Demo](https://img.youtube.com/vi/SylGTfYNrNQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=SylGTfYNrNQ)
 
