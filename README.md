@@ -84,7 +84,7 @@
 ### 📈 주식의 방 — AI 멀티에이전트 주식 토론 분석 플랫폼
 **2026.03 - 현재** | [Demo](https://stockrooms.site/)
 
-[![Stock Council Demo](https://img.youtube.com/vi/SylGTfYNrNQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=SylGTfYNrNQ)
+[![주식의 방 Demo](https://img.youtube.com/vi/heKGrK1Q0-E/maxresdefault.jpg)](https://www.youtube.com/watch?v=heKGrK1Q0-E)
 
 > 실시간 웹 검색 데이터를 기반으로 4명의 전문 AI 에이전트가 토론·분석하여 종합 투자 인사이트를 제공하는 **멀티 에이전트 주식 토론 플랫폼**
 
