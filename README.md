@@ -81,6 +81,27 @@
 
 ## 🏆 Featured Projects
 
+### 🐟 Neofish — 차세대 AI 예측 엔진 및 집단지성 시뮬레이션 플랫폼
+**2026.03 - 현재** | 
+
+[![Neofish Demo](https://img.youtube.com/vi/qcmQDAeNIpo/maxresdefault.jpg)](https://youtu.be/qcmQDAeNIpo)
+
+> 현실 세계의 시드 정보(뉴스, 리포트, 소설 등)를 기반으로 고충실도의 디지털 샌드박스를 구축하고, "신의 시점"에서 다중 에이전트 상호작용을 통해 미래를 리허설하는 **범용 멀티 에이전트 예측 엔진**입니다.
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **복잡계 Multi-Agent Simulation**: 독립적인 기억과 행동 로직을 지닌 수천 개의 지능형 에이전트가 환경 내에서 자유롭게 상호작용하며 창발적(Emergent) 인사이트 도출
+- ✅ **실시간 웹 검색 (Web Search Grounding)**: 백엔드 검색 도구를 연동하여 에이전트가 실시간 최신 웹 데이터를 자율적으로 탐색하고 분석에 반영해 시뮬레이션의 현실 정합성 극대화
+- ✅ **Hybrid Graph Memory 연동**: Neo4j(지식 그래프) 및 Zep(장기 기억) 시스템을 결합하여 에이전트의 과거 문맥과 개체(Entity) 간의 관계성을 실시간으로 구조화 및 유지
+- ✅ **초고속 멀티모달 팟캐스트 변환**: Gemini 2.5 Flash TTS와 멀티쓰레딩 병렬 처리(ThreadPoolExecutor)를 적용해, 텍스트 예측 리포트를 2인 패널의 자연스러운 오디오 팟캐스트로 렌더링 (생성 시간 약 50% 단축)
+- ✅ **자율적 페르소나 스캐폴딩**: 주어진 주제에 맞춰 시스템이 스스로 각기 다른 성향과 전문성, 활동 파라미터를 가진 에이전트 프로필을 동적으로 구축
+
+**🔧 기술적 구현 및 시스템 아키텍처**
+- **상태 관리 최적화**: Singleton 패턴을 활용해 인메모리 시뮬레이션 세션 유실 방지 및 다중 HTTP API 호출 간의 완벽한 데이터 정합성 보장
+- **서버 구조 및 회복 탄력성**: Flask API와 `subprocess` 기반 시뮬레이션 워커를 분리하여 고부하 분산 설계. 외부 API 호출 실패에 대비한 Exponential Backoff 재시도 로직 구현
+- **Frontend / Backend**: Vue 3(SFC, Composition API) / Python, Flask, LangChain, Zep Core, Neo4j, OASIS (CAMEL-AI)
+
+---
+
 ### 📈 주식의 방 — AI 멀티에이전트 주식 토론 분석 플랫폼
 **2026.03 - 현재** | [Demo](https://stockrooms.site/)
 
