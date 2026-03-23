@@ -82,23 +82,25 @@
 ## 🏆 Featured Projects
 
 ### 🐟 Neofish — 차세대 AI 예측 엔진 및 집단지성 시뮬레이션 플랫폼
-**2026.03 - 현재** | 
+**2026.03 - 현재** |
 
 [![Neofish Demo](https://img.youtube.com/vi/qcmQDAeNIpo/maxresdefault.jpg)](https://youtu.be/qcmQDAeNIpo)
 
-> 현실 세계의 시드 정보(뉴스, 리포트, 소설 등)를 기반으로 고충실도의 디지털 샌드박스를 구축하고, "신의 시점"에서 다중 에이전트 상호작용을 통해 미래를 리허설하는 **범용 멀티 에이전트 예측 엔진**입니다.
+> 비정형 시드(뉴스·리포트·내러티브 등)에서 **지식 그래프**를 만들고, **OASIS** 기반 소셜 시뮬레이션으로 집단 행동을 재현한 뒤, **ReportAgent**와 대화·리포트로 해석까지 이어지는 **엔드투엔드 멀티 에이전트 예측 플랫폼**입니다.
 
 **🎯 핵심 기능 및 특장점**
-- ✅ **복잡계 Multi-Agent Simulation**: 독립적인 기억과 행동 로직을 지닌 수천 개의 지능형 에이전트가 환경 내에서 자유롭게 상호작용하며 창발적(Emergent) 인사이트 도출
-- ✅ **실시간 웹 검색 (Web Search Grounding)**: 백엔드 검색 도구를 연동하여 에이전트가 실시간 최신 웹 데이터를 자율적으로 탐색하고 분석에 반영해 시뮬레이션의 현실 정합성 극대화
-- ✅ **Hybrid Graph Memory 연동**: Neo4j(지식 그래프) 및 Zep(장기 기억) 시스템을 결합하여 에이전트의 과거 문맥과 개체(Entity) 간의 관계성을 실시간으로 구조화 및 유지
-- ✅ **초고속 멀티모달 팟캐스트 변환**: Gemini 2.5 Flash TTS와 멀티쓰레딩 병렬 처리(ThreadPoolExecutor)를 적용해, 텍스트 예측 리포트를 2인 패널의 자연스러운 오디오 팟캐스트로 렌더링 (생성 시간 약 50% 단축)
-- ✅ **자율적 페르소나 스캐폴딩**: 주어진 주제에 맞춰 시스템이 스스로 각기 다른 성향과 전문성, 활동 파라미터를 가진 에이전트 프로필을 동적으로 구축
+- ✅ **Neo4j 지식 그래프 + 청크 단위 LLM 추출**: 온톨로지 설계 후 문서를 청크로 나누어 엔터티·관계를 추출·적재하고, 시뮬레이션 준비·리포트 도구에 **동일 그래프**를 연결
+- ✅ **OASIS(CAMEL-AI) 병렬 시뮬레이션**: Twitter / Reddit / 병렬 모드로 에이전트가 게시·댓글·반응 등 플랫폼 행동을 수행하며, **subprocess**로 웹 API와 장시간 실행을 분리
+- ✅ **이중 LLM 전략 (경량·대량 vs 고급 추론)**: 청크 추출·프로필·OASIS 런타임 등 대량 호출과 온톨로지·시뮬 설정 생성·ReportAgent·그래프 도구 연동 분석 등 **추론 집약 구간**에 서로 다른 모델을 매핑해 비용·품질 균형
+- ✅ **ReAct 패턴 ReportAgent + GraphTools**: Neo4j 검색·인사이트·에이전트 인터뷰 등 **도구 호출 루프**로 섹션 구조화 리포트 생성 및 **리포트 채팅** 지원
+- ✅ **온톨로지 생성 시 Web Grounding(선택)**: Gemini Grounding 연동으로 시드 주제에 맞는 배경 정보를 보강해 **시뮬레이션 맥락**을 정비 (기능 플래그·환경에 따름)
+- ✅ **2인 패널 팟캐스트**: Gemini **TTS** 모델로 대화형 오디오 합성, **스크립트**는 경량 LLM + `ThreadPoolExecutor`·레이트 리밋으로 안정적 생성 파이프라인 구성
+- ✅ **D3 관계 네트워크 UI**: 노드 검색·줌/팬·이웃 호버 강조·상세 패널로 **그래프 탐색성** 강화 (Vue 3 + D3)
 
 **🔧 기술적 구현 및 시스템 아키텍처**
-- **상태 관리 최적화**: Singleton 패턴을 활용해 인메모리 시뮬레이션 세션 유실 방지 및 다중 HTTP API 호출 간의 완벽한 데이터 정합성 보장
-- **서버 구조 및 회복 탄력성**: Flask API와 `subprocess` 기반 시뮬레이션 워커를 분리하여 고부하 분산 설계. 외부 API 호출 실패에 대비한 Exponential Backoff 재시도 로직 구현
-- **Frontend / Backend**: Vue 3(SFC, Composition API) / Python, Flask, LangChain, Zep Core, Neo4j, OASIS (CAMEL-AI)
+- **프로세스 분리**: Flask `threaded` API + **subprocess** OASIS 시뮬레이션, 시뮬 디렉터리에 `run_state.json`·액션 로그·**파일 기반 IPC**로 인터뷰 등 비동기 협업
+- **회복 탄력성**: LLM·외부 API 호출에 **재시도·백오프** 패턴 적용(서비스 모듈별)
+- **Frontend / Backend**: **Vue 3**(Composition API, Vite) · **D3** · **Python Flask** · **OpenAI SDK 호환 LLM** · **Neo4j Bolt** · **OASIS (CAMEL-AI)** · (선택) **Google GenAI** 팟캐스트/그라운딩
 
 ---
 
