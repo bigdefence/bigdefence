@@ -49,8 +49,8 @@
 
 ### 💻 Development
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=Flask&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=Flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ### ☁️ Cloud & Tools
@@ -98,9 +98,9 @@
 - ✅ **D3 관계 네트워크 UI**: 노드 검색·줌/팬·이웃 호버 강조·상세 패널로 **그래프 탐색성** 강화 (Vue 3 + D3)
 
 **🔧 기술적 구현 및 시스템 아키텍처**
-- **프로세스 분리**: Flask `threaded` API + **subprocess** OASIS 시뮬레이션, 시뮬 디렉터리에 `run_state.json`·액션 로그·**파일 기반 IPC**로 인터뷰 등 비동기 협업
+- **프로세스 분리**: **FastAPI** + **Uvicorn** API 레이어와 **subprocess** OASIS 시뮬레이션을 분리, 시뮬 디렉터리에 `run_state.json`·액션 로그·**파일 기반 IPC**로 인터뷰 등 비동기 협업
 - **회복 탄력성**: LLM·외부 API 호출에 **재시도·백오프** 패턴 적용(서비스 모듈별)
-- **Frontend / Backend**: **Vue 3**(Composition API, Vite) · **D3** · **Python Flask** · **OpenAI SDK 호환 LLM** · **Neo4j Bolt** · **OASIS (CAMEL-AI)** · (선택) **Google GenAI** 팟캐스트/그라운딩
+- **Frontend / Backend**: **Vue 3**(Composition API, Vite) · **D3** · **Python FastAPI** · **Uvicorn** · **OpenAI SDK 호환 LLM** · **Neo4j Bolt** · **OASIS (CAMEL-AI)** · (선택) **Google GenAI** 팟캐스트/그라운딩
 
 ---
 
