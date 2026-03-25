@@ -89,18 +89,18 @@
 > 비정형 시드(뉴스·리포트·내러티브 등)에서 **지식 그래프**를 만들고, **OASIS** 기반 소셜 시뮬레이션으로 집단 행동을 재현한 뒤, **ReportAgent**와 대화·리포트로 해석까지 이어지는 **엔드투엔드 멀티 에이전트 예측 플랫폼**입니다.
 
 **🎯 핵심 기능 및 특장점**
-- ✅ **Neo4j 지식 그래프 + 청크 단위 LLM 추출**: 온톨로지 설계 후 문서를 청크로 나누어 엔터티·관계를 추출·적재하고, 시뮬레이션 준비·리포트 도구에 **동일 그래프**를 연결
-- ✅ **OASIS(CAMEL-AI) 병렬 시뮬레이션**: Twitter / Reddit / 병렬 모드로 에이전트가 게시·댓글·반응 등 플랫폼 행동을 수행하며, **subprocess**로 웹 API와 장시간 실행을 분리
-- ✅ **이중 LLM 전략 (경량·대량 vs 고급 추론)**: 청크 추출·프로필·OASIS 런타임 등 대량 호출과 온톨로지·시뮬 설정 생성·ReportAgent·그래프 도구 연동 분석 등 **추론 집약 구간**에 서로 다른 모델을 매핑해 비용·품질 균형
-- ✅ **ReAct 패턴 ReportAgent + GraphTools**: Neo4j 검색·인사이트·에이전트 인터뷰 등 **도구 호출 루프**로 섹션 구조화 리포트 생성 및 **리포트 채팅** 지원
-- ✅ **온톨로지 생성 시 Web Grounding(선택)**: Gemini Grounding 연동으로 시드 주제에 맞는 배경 정보를 보강해 **시뮬레이션 맥락**을 정비 (기능 플래그·환경에 따름)
-- ✅ **2인 패널 팟캐스트**: Gemini **TTS** 모델로 대화형 오디오 합성, **스크립트**는 경량 LLM + `ThreadPoolExecutor`·레이트 리밋으로 안정적 생성 파이프라인 구성
-- ✅ **D3 관계 네트워크 UI**: 노드 검색·줌/팬·이웃 호버 강조·상세 패널로 **그래프 탐색성** 강화 (Vue 3 + D3)
+- ✅ **하이브리드 Graph RAG (Vector + FT + Keyword)**: **Gemini Embedding 2 Preview(768 dim)** 기반 벡터 검색, Neo4j 전문 검색, 키워드 매칭을 결합하여 정보 회수율(Recall)과 정확도를 극대화
+- ✅ **심리 시뮬레이션 레이어 (Human Factors)**: 에이전트에게 **Big Five 인격 모델** 및 10여 종의 **인지 편향**을 주입하고, 전역 환경 변수(동조 압력, 감정 전염 속도)를 통해 현실적인 군중 심리 재현
+- ✅ **벡터 기반 고속 엔터티 해상도 (Entity Resolution)**: **Numpy/Scikit-learn**을 활용한 고속 코사인 유사도 연산으로 병합 후보를 선별하여 LLM 호출 비용 절감 및 그래프 구축 속도 획기적 개선
+- ✅ **OASIS(CAMEL-AI) 병렬 시뮬레이션**: Twitter / Reddit 병렬 모드로 집단 행동을 재현하며, **subprocess**와 **파일 기반 IPC**를 통해 웹 서버와 시뮬레이션 엔진 간의 안정적인 비동기 협업 구현
+- ✅ **이중 LLM 전략 및 ReAct 패턴**: 경량 모델(대량 호출)과 고급 추론 모델(온톨로지/분석)을 분리 매핑하고, **ReportAgent**가 ReAct 루프를 통해 자율적으로 그래프 지식을 탐색 및 리포트 생성
+- ✅ **멀티미디어 확장 (AI 팟캐스트)**: 보고서 마크다운을 분석하여 Gemini TTS 기반의 2인 패널 대화형 오디오 콘텐츠 자동 생성
+- ✅ **D3 관계 네트워크 UI**: 의미 검색·줌·이웃 강조 기능이 포함된 대화형 그래프 시각화로 복잡한 지식 구조 탐색성 강화
 
 **🔧 기술적 구현 및 시스템 아키텍처**
-- **프로세스 분리**: **FastAPI** + **Uvicorn** API 레이어와 **subprocess** OASIS 시뮬레이션을 분리, 시뮬 디렉터리에 `run_state.json`·액션 로그·**파일 기반 IPC**로 인터뷰 등 비동기 협업
-- **회복 탄력성**: LLM·외부 API 호출에 **재시도·백오프** 패턴 적용(서비스 모듈별)
-- **Frontend / Backend**: **Vue 3**(Composition API, Vite) · **D3** · **Python FastAPI** · **Uvicorn** · **OpenAI SDK 호환 LLM** · **Neo4j Bolt** · **OASIS (CAMEL-AI)** · (선택) **Google GenAI** 팟캐스트/그라운딩
+- **데이터 최적화**: Neo4j 5.x의 Vector Index와 Full-Text Index를 하이브리드로 운용하여 대규모 지식 구조에서도 밀리초 단위의 시맨틱 조회 보장
+- **심리 엔진 설계**: `WorldPsychologyConfig`를 통한 집단 역학 시뮬레이션 및 에이전트별 `Emotional Reactivity` 활동 제어 로직 구현
+- **Frontend / Backend**: Vue 3 · D3 · Python FastAPI · Neo4j Bolt · OASIS (CAMEL-AI) · Numpy · Scikit-learn · Google GenAI (Embedding/TTS)
 
 ---
 
