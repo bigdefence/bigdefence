@@ -82,7 +82,7 @@
 ## 🏆 Featured Projects
 
 ### 🐟 Neofish — 차세대 AI 예측 엔진 및 집단지성 시뮬레이션 플랫폼
-**2026.03 - 현재** |
+**2026.03 - 현재** | [Repo](https://github.com/bigdefence/Neofish)
 
 [![Neofish Demo](https://img.youtube.com/vi/qcmQDAeNIpo/maxresdefault.jpg)](https://youtu.be/qcmQDAeNIpo)
 
