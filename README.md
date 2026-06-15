@@ -170,6 +170,107 @@ Python, PyTorch, LoRA, DeepSpeed, Gemini API, FastAPI, WebRTC, Whisper, OpenAI T
 
 ---
 
+### 🎙️ BigVox - 한국어 음성 멀티모달 AI 시스템
+**2025.03 - 2025.08** | [HuggingFace](https://huggingface.co/bigdefence)
+
+> EXAONE, HyperCLOVAX, Kanana, Midm 등 4개 한국어 LLM의 차원 불일치를 해결한 동적 Speech Projector 설계 및 저지연 Speech-to-Speech(S2S) 양방향 대화 시스템 단독 개발
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **범용 Speech Projector 설계**: 상이한 한국어 LLM 백본 임베딩 차원(4개 모델)을 감지하고 정규화하는 동적 변환 레이어로 100% 호환성 확보
+- ✅ **실시간 S2S 파이프라인**: Audio -> VAD -> Speech Encoder -> LLM Token Streaming -> CosyVoice2 TTS 연동
+- ✅ **Barge-in(끼어들기) 구현**: 사용자 끼어들기 감지 시 음성 합성을 즉시 중단하고 대화 큐를 재정렬해 자연스러운 대화 흐름 유지
+- ✅ **오픈소스 배포**: HuggingFace에 모델 가중치 및 학습/추론 파이프라인 전체 공개
+
+**🔧 기술 스택**
+```
+Python, PyTorch, WebSocket, Whisper, CosyVoice2, EXAONE, HyperCLOVAX, Kanana, Midm-2.0, VAD, HuggingFace
+```
+
+---
+
+### 🏆 잡코리아 AI Challenge - LLM Engineer (우수상 🥈)
+**2025.09**
+
+> 하이브리드 RAG와 안전 가드레일을 결합해 신뢰성 높고 규격화된 채용공고를 자동으로 생성하는 고성능 GenAI 파이프라인 구축
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **하이브리드 RAG**: FAISS(의미 검색) + BM25(키워드 검색) 앙상블 검색 점수 정규화 믹싱을 통한 정밀 맥락 수집 (Top-K=5)
+- ✅ **고급 PDF 추출**: Docling을 활용해 복잡한 채용 정보 문서의 레이아웃과 표 데이터까지 구조화하여 정밀 파싱
+- ✅ **안전성 가드레일**: 민감·차별적 표현 자동 탐지 및 교정 엔진 구축, 할루시네이션 점수화로 생성 일관성 검증
+- ✅ **출력 구조화 및 최적화**: LiteLLM 기반 JSON 스키마 강제 출력, TTL 캐시(600초)와 임베딩 배치 인코딩으로 처리 성능 가속
+
+**🔧 기술 스택**
+```
+Python, FastAPI, FAISS, BM25, Docling, LiteLLM, gpt-4o-mini, RAG, TTL Cache, Jinja2
+```
+
+---
+
+### 📊 ReportCast - 실시간 AI 검색 기반 보고서 & 팟캐스트 플랫폼
+**2025.01 - 2025.02**
+
+> Gemini Grounding 실시간 검색 데이터에 기반해 전문 PDF 보고서와 2인 대화형 팟캐스트 오디오를 원스톱으로 자동 생성하는 플랫폼
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **실시간 AI 검색**: Gemini Grounding API로 최신 데이터 확보, Flash + Thinking 모델 듀얼 연동으로 깊이와 속도 동시 해결
+- ✅ **보고서 자동 생성**: 서론-본론-결론 구조화 분석 보고서 생성 및 Imagen3 연동 커버 생성, ReportLab 한글 PDF 렌더링
+- ✅ **팟캐스트 오디오 합성**: ChatGPT API로 지식이(Onyx)와 호기심이(Nova) 2인 대화 대본 작성 및 OpenAI TTS 합성, 페이드 인/아웃 배경음 믹싱
+
+**🔧 기술 스택**
+```
+Python, Flask, Gemini Grounding, Gemini-2.0-flash/thinking, ChatGPT API, OpenAI TTS, Imagen3, ReportLab
+```
+
+---
+
+### 💭 기억나래 - AI 기반 기억 보조 케어 플랫폼
+**2024.06** | 이스트소프트 파이널 프로젝트 **우수상 🥈**
+
+> 고령자 및 치매 환자를 위한 대화형 음성 인터페이스, 감정 일기 작성, DALL-E 3 기반 그림일기 시각화 모니터링 시스템
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **음성 대화 인터페이스**: Google Speech 및 Whisper STT, gTTS/OpenAI TTS를 연동해 IT 기기가 낯선 고령자용 배려 UX 설계
+- ✅ **감성 일기 및 시각화**: 일상 대화를 ChatGPT로 분석하여 1인칭 감성 일기로 변환하고 DALL-E 3로 어울리는 수채화 그림 자동 생성
+- ✅ **보호자 모니터링**: Chart.js 기반 감정 빈도 시각화 대시보드로 활동 추적 및 이상 감정 변화 탐지
+
+**🔧 기술 스택**
+```
+Python, Flask, ChatGPT API, DALL·E 3, Google Speech API, gTTS, SQLite, Chart.js
+```
+
+---
+
+### 🎵 MusicFace - AI 얼굴 분석 기반 음악 추천 및 생성 플랫폼
+**2024.05 - 2024.06** | 제1회 해커톤 경진대회 **최우수상 🥇**
+
+> Vision Transformer(BEiT-V2, Swin-V2)로 표정·나이·성별을 실시간 판별하고 LLaMA-3와 SUNO AI를 통해 음악을 개인화 추천·생성하는 시스템
+
+**🎯 핵심 기능 및 특장점**
+- ✅ **얼굴 특징 다중 분석**: MediaPipe 얼굴 검출 및 BEiT-V2(표정), Swin-V2(나이, 성별) ViT 모델로 실시간 멀티태스크 분류
+- ✅ **LLM 음악 매핑**: 분석 결과를 LLaMA-3 프롬프팅을 거쳐 감정과 나이에 최적화된 음악 장르 및 템포, 가사 속성으로 변환
+- ✅ **자동 음악 생성**: SUNO AI API 연동으로 맞춤형 오디오 자동 생성, Gradio 기반 실시간 웹캠 및 감정 확률 바 시각화 대시보드
+
+**🔧 기술 스택**
+```
+Python, PyTorch, MediaPipe, BEiT-V2, Swin-V2, LLaMA-3, SUNO AI, Gradio
+```
+
+---
+
+### 💰 Toss In-app 수익화 운영 서비스
+**2025 - 현재**
+
+> Toss 인앱 웹뷰를 기반으로 얼굴 이미지를 분석해 다양한 인사이트를 제공하며 실제 비즈니스 가치를 입증한 실서비스들
+
+**🎯 서비스 라인업**
+- 👤 **얼굴 분석 스튜디오**: 항공사, 엔터테인먼트 등 직종별 이미지 매칭도를 분석해 최적의 직군을 매칭하는 분석 서비스
+- 🔮 **관상로또**: 얼굴 이미지 및 생년월일을 입력받아 오늘의 운세 및 얼굴 인사이트, 커스터마이징된 로또 번호를 추천하는 서비스
+
+**🔧 주요 성과**
+- Toss In-app 환경에서 실제 결제 연동 및 상용 론칭하여 현재까지 실사용자 트래픽 확보 및 수익화 운영 중
+
+---
+
 ## 🏆 Awards & Competitions
 
 <div align="center">
