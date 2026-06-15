@@ -224,7 +224,7 @@ Python, Flask, Gemini Grounding, Gemini-2.0-flash/thinking, ChatGPT API, OpenAI 
 ---
 
 ### 💭 기억나래 - AI 기반 기억 보조 케어 플랫폼
-**2024.06** | 이스트소프트 파이널 프로젝트 **우수상 🥈**
+**2024.06** | 제1회 해커톤 경진대회 **최우수상 🥇**
 
 > 고령자 및 치매 환자를 위한 대화형 음성 인터페이스, 감정 일기 작성, DALL-E 3 기반 그림일기 시각화 모니터링 시스템
 
@@ -241,7 +241,7 @@ Python, Flask, ChatGPT API, DALL·E 3, Google Speech API, gTTS, SQLite, Chart.js
 ---
 
 ### 🎵 MusicFace - AI 얼굴 분석 기반 음악 추천 및 생성 플랫폼
-**2024.05 - 2024.06** | 제1회 해커톤 경진대회 **최우수상 🥇**
+**2024.05 - 2024.06** | 이스트소프트 파이널 프로젝트 **우수상 🥈**
 
 > Vision Transformer(BEiT-V2, Swin-V2)로 표정·나이·성별을 실시간 판별하고 LLaMA-3와 SUNO AI를 통해 음악을 개인화 추천·생성하는 시스템
 
