@@ -1,6 +1,3 @@
-<img width="1024" height="1024" alt="generated-1275" src="https://github.com/user-attachments/assets/e00b0ef1-c3e3-4628-8785-b5796b272bfe" />
-<div align="center">
-
 # 정강빈 (Kangbin Jeong)
 ### 🤖 Multimodal AI Engineer | LLM Specialist
 
