@@ -3,8 +3,7 @@
 # 정강빈 (Kangbin Jeong)
 ### 🤖 Multimodal AI Engineer | Agentic Systems · LLM Specialist
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=bigdefence)](https://solved.ac/bigdefence)
-[![GitHub followers](https://img.shields.io/github/followers/bigdefence?style=social)](https://github.com/bigdefence)
+
 [![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-1500+_downloads-yellow)](https://huggingface.co/bigdefence)
 [![AX AI 인재](https://img.shields.io/badge/🎖️_AX_AI_인재-본선_예비_후보-blue)](#awards--competitions)
 
@@ -13,7 +12,7 @@
 ---
 
 > 🎖️ **AX 인재전쟁 "AI 인재" 및 본선 예비 후보 선정 (2026.07)**  
-> 5,300여 명이 참가한 AI 인재 서바이벌 예선에서 메디테라피 트랙 상위 성적으로 **본선 예비 후보**에 진출하였으며, 예선 상위 성적자로서 공식 **AI 인재**에 최종 선정되었습니다.
+> 5,300여 명이 참가한 AI 인재 서바이벌 예선에서 메디테라피 트랙 상위 성적으로 **본선 예비 후보**에 진출하였으며, 예선 상위 성적자로서 공식 **"AI 인재"**에 최종 선정되었습니다.
 
 ---
 
