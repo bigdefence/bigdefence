@@ -136,89 +136,72 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
 
 갤러리에서 **템플릿 이미지**를 선택하고, 사용자가 **레퍼런스(인물/제품) 이미지**를 업로드하면 에이전트가 두 입력을 융합해 최종 **After** 이미지를 자동 생성합니다.
 
-##### 1️⃣ 인물 광고 화보 생성 모드 (Person Mode)
+##### ✨ 실제 서비스 생성 결과 (Template → Generated Result)
 
-> **광고 템플릿**, **인물 레퍼런스**, 그리고 **제품 레퍼런스**를 함께 업로드하면, 템플릿의 구도·조명·분위기를 유지하면서 인물의 얼굴과 표정을 자연스럽게 반영하고 제품의 형태와 브랜드 정체성을 보존한 광고 화보를 생성합니다.
+> 실제 생성 결과 9종을 한눈에 비교할 수 있도록 압축했습니다. **Template**과 **Result**를 나란히 배치했으며, 이미지를 누르면 원본 크기로 열립니다.
 
-<table>
-<tr>
-<th width="20%">Template</th>
-<th width="20%">Person Reference</th>
-<th width="20%">Product Reference</th>
-<th width="20%">After</th>
-<th width="20%">Detail Edit</th>
-</tr>
-<tr>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/ae43e3a6-f0cb-4ec3-9ce8-ab3e9888a10e" width="180"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/dd6067e5-bcb8-4b84-9952-4c0c69d6d83f" width="180"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/4b10117e-606b-4e3a-afcf-f98d198ef7d5" width="180"/>
-</td>
-<td align="center">
-<img width="180" src="https://github.com/user-attachments/assets/cd4e708f-9577-4423-9d68-ec8171d89109" />
-</td>
-<td align="center">
-<img width="180" src="https://github.com/user-attachments/assets/c382565e-ebb5-416d-9d84-9ad05a2563ef" />
-</td>
-</tr>
+<table width="100%">
+  <tr>
+    <th colspan="2">인물 · 여름 바닷가 3컷</th>
+    <th colspan="2">인물 · 일본 필름 스타일</th>
+    <th colspan="2">인물 · 딸기 얼음컵</th>
+  </tr>
+  <tr>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="16.6%"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/dc/dc6544b697bb0ef0b230320832c78042e77e27e6f4964ae2cd35a8f40ad35d52.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/dc/dc6544b697bb0ef0b230320832c78042e77e27e6f4964ae2cd35a8f40ad35d52.jpg" width="145" alt="여름 바닷가 3컷 화보 템플릿"/></a></td>
+    <td align="center" width="16.6%"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100005.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100005.png" width="145" alt="여름 바닷가 3컷 화보 생성 결과"/></a></td>
+    <td align="center" width="16.6%"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/15/15677658ed93c3e85aab9f392f80b454f0eb6ff3c4347085b75c7e6a927ff1c3.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/15/15677658ed93c3e85aab9f392f80b454f0eb6ff3c4347085b75c7e6a927ff1c3.jpg" width="145" alt="일본 후지 필름 스타일 템플릿"/></a></td>
+    <td align="center" width="16.6%"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100006.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100006.png" width="145" alt="일본 후지 필름 스타일 생성 결과"/></a></td>
+    <td align="center" width="16.6%"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/d8/d8031007333c0ac4d98441f2376c3d41ba4e5ac963b73847567e579446d88888.webp"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/d8/d8031007333c0ac4d98441f2376c3d41ba4e5ac963b73847567e579446d88888.webp" width="145" alt="딸기 얼음컵 속 소녀 템플릿"/></a></td>
+    <td align="center" width="16.6%"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100015.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100015.png" width="145" alt="딸기 얼음컵 속 소녀 생성 결과"/></a></td>
+  </tr>
+  <tr>
+    <th colspan="2">인물 · 향수병 패션 모델</th>
+    <th colspan="2">인물 · 비눗방울 햇살</th>
+    <th colspan="2">제품 · 분홍 물결 캠페인</th>
+  </tr>
+  <tr>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/54/5459bccfab690522be2f7571a600bc62c9f1a515e6af59dd8752c40ce8ff8705.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/54/5459bccfab690522be2f7571a600bc62c9f1a515e6af59dd8752c40ce8ff8705.jpg" width="145" alt="수정 향수병 속 패션 모델 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100016.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100016.png" width="145" alt="수정 향수병 속 패션 모델 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/68/68c7b17913584146b62a1ff7bffd2ae5177571a3cf9dee7fd7d4fe99937070f7.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/68/68c7b17913584146b62a1ff7bffd2ae5177571a3cf9dee7fd7d4fe99937070f7.jpg" width="145" alt="비눗방울 속 햇살 여인 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100026.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100026.png" width="145" alt="비눗방울 속 햇살 여인 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/43/434f208a791e2d332c17c805ce532db5a8bf40948ed582b43fafcdd37d4ba044.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/43/434f208a791e2d332c17c805ce532db5a8bf40948ed582b43fafcdd37d4ba044.jpg" width="145" alt="분홍 물결 속 클렌저 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100027.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100027.png" width="145" alt="분홍 물결 속 클렌저 생성 결과"/></a></td>
+  </tr>
+  <tr>
+    <th colspan="2">제품 · 고아슈 포스터</th>
+    <th colspan="2">제품 · 미니어처 디오라마</th>
+    <th colspan="2">제품 · 3D 상업 포스터</th>
+  </tr>
+  <tr>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/5b/5b3bbbb8e621dcf2e768e4709c31df1e6bc824e80bdf7a2f5f42dbfc93827672.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/5b/5b3bbbb8e621dcf2e768e4709c31df1e6bc824e80bdf7a2f5f42dbfc93827672.jpg" width="145" alt="몽환 고아슈 제품 포스터 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-906.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-906.png" width="145" alt="몽환 고아슈 제품 포스터 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/bf/bf725627f911070eb9366fe4c18db0c7501ccaea5bbe920c287444c13b1e8fd9.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/bf/bf725627f911070eb9366fe4c18db0c7501ccaea5bbe920c287444c13b1e8fd9.jpg" width="145" alt="미니 작업자 제품 디오라마 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-948.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-948.png" width="145" alt="미니 작업자 제품 디오라마 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/86/86d0cf79eda81c503f80d6c8a212be19ba4e4f26cf675d19ef9f04afc5f16ae9.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/86/86d0cf79eda81c503f80d6c8a212be19ba4e4f26cf675d19ef9f04afc5f16ae9.jpg" width="145" alt="프리미엄 3D 상업 포스터 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-955.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-955.png" width="145" alt="프리미엄 3D 상업 포스터 생성 결과"/></a></td>
+  </tr>
 </table>
+
+> 인물 모드는 얼굴·헤어·피부 톤 같은 정체성을 장면에 자연스럽게 옮기고, 제품 모드는 패키지 형상·재질·라벨을 유지하면서 카피·팔레트·소품을 새 브랜드에 맞게 재구성합니다.
 
 ---
 
-##### 2️⃣ 제품 연출 & 카탈로그 생성 모드 (Product Mode)
-
-> **제품 레퍼런스 이미지**와 **선택한 템플릿**을 조합하여 제품의 형태와 브랜드 정체성을 유지한 채 다양한 마케팅 콘텐츠를 자동 생성합니다.
-
-###### 🎨 미니어처 디오라마 연출
-
-<table>
-<tr>
-<th width="33%">Template</th>
-<th width="33%">Reference (제품)</th>
-<th width="33%">After</th>
-</tr>
-<tr>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/433a1dd6-615f-43ac-9538-ec6551430866" width="240"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/4b10117e-606b-4e3a-afcf-f98d198ef7d5" width="240"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/0b6dd044-c7c6-452d-bd5f-5bb4d33db8f8" width="240"/>
-</td>
-</tr>
-</table>
-
-###### 📋 제품 디자인 사양 카탈로그
-
-<table>
-<tr>
-<th width="33%">Template</th>
-<th width="33%">Reference (제품)</th>
-<th width="33%">After</th>
-</tr>
-<tr>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/3b4aad30-5336-49a4-9678-35545e22a35b" width="240"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/4b10117e-606b-4e3a-afcf-f98d198ef7d5" width="240"/>
-</td>
-<td align="center">
-<img src="https://github.com/user-attachments/assets/fc00b792-8f3b-4b89-8400-2de4f2dc7461" width="240"/>
-</td>
-</tr>
-</table>
-
-
----
-
-##### 3️⃣ 디테일 편집 (Detail Edit) — 캔버스 드로잉 기반 정밀 후처리
+##### 디테일 편집 (Detail Edit) — 캔버스 드로잉 기반 정밀 후처리
 
 > 템플릿 생성 결과에서 「디테일 편집」을 누르면 Fabric.js **캔버스**가 열립니다. 사용자는 프롬프트나 별도 편집 툴 없이, **영역을 드래그하거나 화살표를 그리는 직관적인 드로잉**만으로 "어디를 어떻게 바꿀지"를 표시합니다. 이후 **캔버스 의도 분석 → 프롬프트 자동 재작성 → GPT Image 2 기반 부분 재생성 → seamless 합성**까지 전 과정을 에이전트가 자율적으로 처리해, 배경·소품·포즈·제품 위치 등을 **정교하게** 다듬을 수 있습니다.
 
