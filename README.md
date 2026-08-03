@@ -138,7 +138,7 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
 
 ##### ✨ 실제 서비스 생성 결과 (Template → Generated Result)
 
-> 실제 생성 결과 9종을 한눈에 비교할 수 있도록 압축했습니다. **Template**과 **Result**를 나란히 배치했으며, 이미지를 누르면 원본 크기로 열립니다.
+> 실제 생성 결과 12종을 한눈에 비교할 수 있도록 압축했습니다. **Template**과 **Result**를 나란히 배치했으며, 이미지를 누르면 원본 크기로 열립니다.
 
 <table width="100%">
   <tr>
@@ -194,6 +194,24 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
     <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-948.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-948.png" width="145" alt="미니 작업자 제품 디오라마 생성 결과"/></a></td>
     <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/86/86d0cf79eda81c503f80d6c8a212be19ba4e4f26cf675d19ef9f04afc5f16ae9.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/86/86d0cf79eda81c503f80d6c8a212be19ba4e4f26cf675d19ef9f04afc5f16ae9.jpg" width="145" alt="프리미엄 3D 상업 포스터 템플릿"/></a></td>
     <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-955.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-955.png" width="145" alt="프리미엄 3D 상업 포스터 생성 결과"/></a></td>
+  </tr>
+  <tr>
+    <th colspan="2">캠페인 · 라일락 향수 패션 화보</th>
+    <th colspan="2">캠페인 · 복숭아 음료 패션</th>
+    <th colspan="2">인물 · 케이팝 팬사인회 뷰파인더</th>
+  </tr>
+  <tr>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/6c/6c6b3bcf14f28318e3fbe73ef8f95481c96b61c55f6c41b1164d745cf8f9acbe.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/6c/6c6b3bcf14f28318e3fbe73ef8f95481c96b61c55f6c41b1164d745cf8f9acbe.jpg" width="145" alt="라일락 향수 패션 화보 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100032.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100032.png" width="145" alt="라일락 향수 패션 화보 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/0d/0d20f3c794a2cf745dc29ebcf6d421ae2ea00f682f9289dfbd63b6bb842b7bb8.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/0d/0d20f3c794a2cf745dc29ebcf6d421ae2ea00f682f9289dfbd63b6bb842b7bb8.jpg" width="145" alt="복숭아 음료 패션 캠페인 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100033.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100033.png" width="145" alt="복숭아 음료 패션 캠페인 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/ca/ca77bbb4e010103a00d27de77cb96822126873a17b6c7371e405e4247aae35e0.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/ca/ca77bbb4e010103a00d27de77cb96822126873a17b6c7371e405e4247aae35e0.jpg" width="145" alt="케이팝 팬사인회 뷰파인더 초상 템플릿"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100041.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100041.png" width="145" alt="케이팝 팬사인회 뷰파인더 초상 생성 결과"/></a></td>
   </tr>
 </table>
 
