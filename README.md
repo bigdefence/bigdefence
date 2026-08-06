@@ -96,22 +96,22 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
 
 <table width="100%">
   <tr>
-    <td align="center" width="33%">
-      <a href="https://www.youtube.com/watch?v=Q02SbqLwhbg">
-        <img src="https://img.youtube.com/vi/Q02SbqLwhbg/mqdefault.jpg" width="100%" alt="Magic Canvas Image Demo"/><br>
-        <strong>Demo 1 (이미지 생성)</strong>
+    <td align="center" width="33.3%">
+      <a href="https://www.youtube.com/watch?v=-pOsfJSwbv0">
+        <img src="https://img.youtube.com/vi/-pOsfJSwbv0/hqdefault.jpg" width="100%" alt="Magic Canvas 서비스 데모 영상"/><br>
+        <strong>Magic Canvas 서비스 데모</strong>
       </a>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33.3%">
       <a href="https://www.youtube.com/watch?v=DSoXkkxO7Ag">
-        <img src="https://img.youtube.com/vi/DSoXkkxO7Ag/mqdefault.jpg" width="100%" alt="TikTok AI Beauty UGC Video Demo"/><br>
-        <strong>Demo 2 (뷰티 UGC 영상 생성)</strong>
+        <img src="https://img.youtube.com/vi/DSoXkkxO7Ag/hqdefault.jpg" width="100%" alt="Magic Shorts 뷰티 UGC 데모 영상"/><br>
+        <strong>Magic Shorts · 뷰티 UGC</strong>
       </a>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33.3%">
       <a href="https://www.youtube.com/watch?v=ujBqgwPyfzc">
-        <img src="https://img.youtube.com/vi/ujBqgwPyfzc/mqdefault.jpg" width="100%" alt="TikTok AI Fashion UGC Video Demo"/><br>
-        <strong>Demo 3 (패션 UGC 영상 생성)</strong>
+        <img src="https://img.youtube.com/vi/ujBqgwPyfzc/hqdefault.jpg" width="100%" alt="Magic Shorts 패션 UGC 데모 영상"/><br>
+        <strong>Magic Shorts · 패션 UGC</strong>
       </a>
     </td>
   </tr>
@@ -138,7 +138,7 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
 
 ##### ✨ 실제 서비스 생성 결과 (Template → Generated Result)
 
-> 실제 생성 결과 12종을 한눈에 비교할 수 있도록 압축했습니다. **Template**과 **Result**를 나란히 배치했으며, 이미지를 누르면 원본 크기로 열립니다.
+> 실제 생성 결과 12종을 한눈에 비교할 수 있도록 압축했습니다. 원본 템플릿이 제공되는 사례는 **Template**과 **Result**를 나란히 배치했으며, 이미지를 누르면 원본 크기로 열립니다.
 
 <table width="100%">
   <tr>
@@ -198,20 +198,20 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
   <tr>
     <th colspan="2">캠페인 · 라일락 향수 패션 화보</th>
     <th colspan="2">캠페인 · 복숭아 음료 패션</th>
-    <th colspan="2">인물 · 케이팝 팬사인회 뷰파인더</th>
+    <th colspan="2">인물 · 초여름 들판 화보</th>
   </tr>
   <tr>
     <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
     <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
-    <td align="center"><sub>Template</sub></td><td align="center"><sub>Result</sub></td>
+    <td align="center"><sub>Before</sub></td><td align="center"><sub>After</sub></td>
   </tr>
   <tr>
     <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/6c/6c6b3bcf14f28318e3fbe73ef8f95481c96b61c55f6c41b1164d745cf8f9acbe.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/6c/6c6b3bcf14f28318e3fbe73ef8f95481c96b61c55f6c41b1164d745cf8f9acbe.jpg" width="145" alt="라일락 향수 패션 화보 템플릿"/></a></td>
     <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100032.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100032.png" width="145" alt="라일락 향수 패션 화보 생성 결과"/></a></td>
     <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/0d/0d20f3c794a2cf745dc29ebcf6d421ae2ea00f682f9289dfbd63b6bb842b7bb8.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/0d/0d20f3c794a2cf745dc29ebcf6d421ae2ea00f682f9289dfbd63b6bb842b7bb8.jpg" width="145" alt="복숭아 음료 패션 캠페인 템플릿"/></a></td>
     <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100033.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100033.png" width="145" alt="복숭아 음료 패션 캠페인 생성 결과"/></a></td>
-    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/ca/ca77bbb4e010103a00d27de77cb96822126873a17b6c7371e405e4247aae35e0.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/ca/ca77bbb4e010103a00d27de77cb96822126873a17b6c7371e405e4247aae35e0.jpg" width="145" alt="케이팝 팬사인회 뷰파인더 초상 템플릿"/></a></td>
-    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100041.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100041.png" width="145" alt="케이팝 팬사인회 뷰파인더 초상 생성 결과"/></a></td>
+    <td align="center"><a href="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/eb/eb75b5393a2e846f0eeab9d88f388665216d594d29bd41611e718caf08f8c246.jpg"><img src="https://axpkeucqbwsmdldkrido.supabase.co/storage/v1/object/public/magic-template-images/templates/eb/eb75b5393a2e846f0eeab9d88f388665216d594d29bd41611e718caf08f8c246.jpg" width="145" alt="초여름 들판 인물 화보 Before"/></a></td>
+    <td align="center"><a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100039.png"><img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/generated-100039.png" width="145" alt="초여름 들판 인물 화보 After"/></a></td>
   </tr>
 </table>
 
@@ -222,6 +222,27 @@ AI 기술을 단순히 호출하거나 모델을 튜닝하는 것에 그치지 �
 ##### 디테일 편집 (Detail Edit) — 캔버스 드로잉 기반 정밀 후처리
 
 > 템플릿 생성 결과에서 「디테일 편집」을 누르면 Fabric.js **캔버스**가 열립니다. 사용자는 프롬프트나 별도 편집 툴 없이, **영역을 드래그하거나 화살표를 그리는 직관적인 드로잉**만으로 "어디를 어떻게 바꿀지"를 표시합니다. 이후 **캔버스 의도 분석 → 프롬프트 자동 재작성 → GPT Image 2 기반 부분 재생성 → seamless 합성**까지 전 과정을 에이전트가 자율적으로 처리해, 배경·소품·포즈·제품 위치 등을 **정교하게** 다듬을 수 있습니다.
+
+<table width="100%">
+  <tr>
+    <th width="50%">Before · 캔버스 편집 지시</th>
+    <th width="50%">After · 에이전트 편집 결과</th>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/detail_before.png">
+        <img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/detail_before.png" height="420" alt="Magic Canvas 디테일 편집 Before — 선글라스와 티셔츠 문구 변경 영역을 표시한 캔버스"/>
+      </a>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/detail_after.png">
+        <img src="https://raw.githubusercontent.com/bigdefence/bigdefence/main/result/detail_after.png" height="420" alt="Magic Canvas 디테일 편집 After — 선글라스와 Magic Canvas 티셔츠 문구가 반영된 결과"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+> 캔버스에서 선글라스 추가와 티셔츠 문구 변경 위치만 시각적으로 표시하면, 에이전트가 의도를 분석해 나머지 인물·구도·스타일을 유지한 결과를 생성합니다.
 
 **캔버스 드로잉 → Agentic 편집**
 - **직관적 드로잉만으로 정교한 편집**: "왼쪽 상단 배경만 노을로"처럼 글로 설명하기 어려운 수정도, 캔버스 위에서 **영역·화살표를 그리는 것**만으로 충분합니다. Photoshop 없이도 픽셀 단위에 가까운 부분 수정이 가능합니다.
